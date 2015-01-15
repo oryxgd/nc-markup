@@ -1,0 +1,40 @@
+/* Curl Top Left */
+/* line 13, F:/projects-f/test/sass/main/mixins/vertical-align */
+.vert > p, .vert > div, .vert > a {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%); }
+
+/* line 3, F:/projects-f/test/sass/style.scss */
+body {
+  width: 100%;
+  height: 100%; }
+
+/* line 8, F:/projects-f/test/sass/style.scss */
+html {
+  width: 100%;
+  height: 100%; }
+
+/* line 15, F:/projects-f/test/sass/style.scss */
+section {
+  height: 100%;
+  text-align: center;
+  padding-top: 100px; }
+
+@media (min-width: 992px) {
+  .carousel {
+    height: 100%; } }
+
+/* line 27, F:/projects-f/test/sass/style.scss */
+.about-section {
+  background: #eee; }
+
+/* line 31, F:/projects-f/test/sass/style.scss */
+.services-section {
+  background: #fff; }
+
+/* line 35, F:/projects-f/test/sass/style.scss */
+.contact-section {
+  background: #eee; }
