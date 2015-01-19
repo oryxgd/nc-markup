@@ -7,23 +7,110 @@
 	margin-top: 0;
 	text-align: left;
 	background: #aa9c92;
+	.row-shadow {
+		-webkit-box-shadow: 0 28px 26px -26px #82746a;
+   		-moz-box-shadow:0 28px 26px -26px #82746a;
+        box-shadow: 0 28px 26px -26px #82746a;
+	}
 	.features-description{
+		padding-top:20px;
+		padding-bottom: 40px;
 		h1 {
-			@include font-size(100px);
+			@include font-size(80px);
 			color:#9ae8dd;
 			font-family: $lobster-font;
+			margin-bottom: 0;
 		}
 		h2 {
-			@include font-size(36px);
+			@include font-size(25px);
 			color:#9ae8dd;
 			font-weight: 700;
+			margin-top:0;
 		}
 		h3,p {
-			@include font-size(32px);
+			@include font-size(20px);
 			color:#9ae8dd;
 			font-weight: 300;
 		}
+
 		p { color:#e8e2dd;}
+	}
+	.category-description {
+		padding-top:20px;
+		h4 {
+			color:#9ae8dd;
+			@include font-size(25px);
+			font-weight: 600;
+			margin-left:40px;
+			margin-bottom: 20px;
+		}
+		ul{
+			padding-left: 0;
+			li {
+				list-style: none;
+				padding-left:60px;
+				@include font-size(18px);
+				color:#fff;
+			}
+		}
+		.general {
+			ul {
+
+				li.weight {
+					background: url('../images/features-icons/general-icons-sprite.png')no-repeat;
+					background-position: 0 0px;
+				}
+				li.sizes {
+					background: url('../images/features-icons/general-icons-sprite.png')no-repeat;
+					background-position: 0 -75px;
+				}
+				li.materials {
+					background: url('../images/features-icons/general-icons-sprite.png')no-repeat;
+					background-position: 0 -145px;
+				}
+			}
+		}//general
+
+		.parts {
+			ul {
+				li.frame {
+					background: url('../images/features-icons/parts-icons-sprite.png')no-repeat;
+					background-position: 0 0px;
+				}
+				li.chainWheel {
+					background: url('../images/features-icons/parts-icons-sprite.png')no-repeat;
+					background-position: 0 -60px;
+				}
+				li.pedals {
+					background: url('../images/features-icons/parts-icons-sprite.png')no-repeat;
+					background-position: 0 -125px;
+				}
+				li.wheels {
+					background: url('../images/features-icons/parts-icons-sprite.png')no-repeat;
+					background-position: 0 -185px;
+				}
+				li.frame-1 {
+					background: url('../images/features-icons/parts-icons-sprite.png')no-repeat;
+					background-position: 0 -250px;
+				}
+				li.stem {
+					background: url('../images/features-icons/parts-icons-sprite.png')no-repeat;
+					background-position: 0 -310px;
+				}
+			}
+		}//parts
+
+		.box  {
+			ul {
+				li {
+					padding-left:80px;
+				}
+				li.hugo-bicycle {
+					background: url('../images/features-icons/box-icons-sprite.png')no-repeat;
+					background-position: 0 0px;
+				}
+			}
+		}
 	}
 }
 

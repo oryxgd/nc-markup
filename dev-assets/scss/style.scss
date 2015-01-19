@@ -9,6 +9,7 @@
 @import "main/description-section";
 @import "main/features-section";
 @import "main/tiles-section";
+@import "main/add-to-cart-section";
 
 //footer
 @import "main/footer";
@@ -69,7 +70,9 @@ section {
     -moz-box-shadow:    inset 2px 8px 20px #bdbdbd;
     -webkit-box-shadow: inset 2px 8px 20px #bdbdbd;
     box-shadow:         inset 2px 8px 20px #bdbdbd;
-
+    @media (max-width: 992px) {
+        height: auto !important;
+    }
 }
 .intro-section {
     margin-top: 75px;

@@ -37,33 +37,35 @@
 	  		color:#6dcacd;
 	  		@include font-size(45px);
 	  	}
-	  	.add_to_cart {
-	  		margin-top:20px;
-	  		width:260px;
 
-	  		.btn-default {
-	  			@include border-radius(30px);
-	  			width:100%;
-	  			@include font-size(30px);
-	  			color:#7c6f66;
-	  			border-color: #dcd4cd;
-	  			behavior: url(../dev-assets/css/PIE.htc);
-	  			padding:0;
-	  			span {
-	  				float:left;
-	  				padding:3px;
-	  				padding-left:6px;
-	  				padding-right:6px;
-	  				background: #dcd8d6;
-	  				@include border-radii(20px,0,0,20px);
-	  				img {
-	  					position: relative;
-	  					bottom: 3px;
-	  				}
-	  			}
-	  		}
-	  	}
 	  }
 }
 
+//add to cart button
 
+.add_to_cart {
+	margin-top:20px;
+	width:260px;
+
+	.btn-default {
+		@include border-radius(30px);
+		width:100%;
+		@include font-size(30px);
+		color:#7c6f66;
+		border-color: #dcd4cd;
+		behavior: url(../dev-assets/css/PIE.htc);
+		padding:0;
+		span {
+			float:left;
+			padding:3px;
+			padding-left:6px;
+			padding-right:6px;
+			background: #dcd8d6;
+			@include border-radii(20px,0,0,20px);
+			img {
+				position: relative;
+				bottom: 3px;
+			}
+		}
+	}
+}
