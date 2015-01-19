@@ -3,9 +3,10 @@
 
 .add-to-cart-section {
 	margin-top: 0;
-	padding-bottom: 0;
 	text-align: left;
-	height: 100%;
+	@media (min-width: 1600px) {
+		height: 100%;	
+	}
 	.product-name {
 		h1 {
 			color:#007984;
@@ -18,18 +19,43 @@
 		}
 	}
 	.product-options {
+		.form-group {
+			margin-bottom: 20px;		
+			span {
+				margin-right:15px;
+			}
+		}
 		label {
 			@include font-size(25px);
 		}
+		.add_to_cart {
+			span {
+				background: none;
+				img {
+					border-right:1px solid #dfdad7;
+					padding-right:15px;
+					padding-left:5px; 
+				}
+			}
+		}
+
 		h3 {
 			color:#7c6f66;
 			@include font-size(30px);
-			padding-bottom: 5px;
+			padding-bottom: 10px;
+			margin-bottom: 30px;
+			margin-top: 30px;
 			-webkit-box-shadow: 0 8px 6px -6px  #ebe7e3;
 	   		-moz-box-shadow: 0 8px 6px -6px #ebe7e3;
 	        box-shadow: 0 8px 6px -6px  #ebe7e3;
 	        width:250px;
 	        text-align: center;
+			input[type="text"] {
+				width: 50px;
+				border-radius: 20px;
+				border: 1px solid #b0a8a2;
+				text-align: center;
+			}
 		}
 
 		.select_size {
@@ -41,7 +67,6 @@
 			    display:inline-block;
 			    width:29px;
 			    height:29px;
-			    margin:-1px 4px 0 0;
 			    vertical-align:middle;
 			    background:url('../images/radio_button.png') left top no-repeat;
 			    cursor:pointer;
@@ -63,7 +88,6 @@
 			    display:inline-block;
 			    width:29px;
 			    height:29px;
-			    margin:-1px 4px 0 0;
 			    vertical-align:middle;
 			    cursor:pointer;
 			}

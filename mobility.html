@@ -107,9 +107,9 @@
                 <li><img src="dev-assets/images/icon-cart.png" alt="icon"></li>
                 <li>BUY</li>
             </ul>
-            <ul>
+            <ul class="scrollToTop">
                 <li><img src="dev-assets/images/top-arrow.png" alt="icon"></li>
-                <li><a href="#" class="scrollToTop">TOP</a></li>
+                <li><a href="#" >TOP</a></li>
             </ul>
         </div>
     <!--right side icons -->
@@ -120,7 +120,7 @@
                 <h2>Flowing Fast</h2>
                 <img src="dev-assets/images/people-1.jpg" alt="product name">
                 <div class="add_to_cart">
-                    <a href="#" class="btn btn-default add-to-cart"><span><img src="dev-assets/images/icon-cart.png" alt="cart"></span>Add to cart</a>
+                    <a href="#add-to-cart-section" class="btn btn-default"><span><img src="dev-assets/images/icon-cart.png" alt="cart"></span>Add to cart</a>
                 </div>
             </div>
         </div>
@@ -375,19 +375,19 @@
         </div>
     </section>
 
-    <section class="add-to-cart-section">
+    <section class="add-to-cart-section" id="add-to-cart-section">
         <div class="container">
             <div class="product-name">
                 <h1>Hugo</h1>
                 <h2>Features & Specifications</h2>
             </div>
 
-            <div class="col-md-8">
+            <div class="col-md-9">
                 <div class="product-image">
-                    <img src="dev-assets/images/bicycle-product.png" class="img-responsive" alt="product">
+                    <img src="dev-assets/images/bicycle-product.png" class="image-product" class="img-responsive" alt="product">
                 </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-3">
                 <div class="product-options">
 
                     <div class="select_color">
@@ -423,9 +423,13 @@
                     </div>
 
 
-                    <h3>Quantity</h3>
+                    <h3>Quantity:
+                        <a href="#"><img src="dev-assets/images/plus.png"></a>
+                        <input type="text" placeholder="01">
+                        <a href="#"><img src="dev-assets/images/minus.png"></a>
+                    </h3>
                     <div class="add_to_cart">
-                        <a href="#" class="btn btn-default add-to-cart"><span><img src="dev-assets/images/icon-cart.png" alt="cart"></span>Add to cart</a>
+                        <button class="btn btn-default add-to-cart"><span><img src="dev-assets/images/icon-cart.png" alt="cart"></span>Add to cart</button>
                     </div>
                 </div>
             </div>
@@ -496,11 +500,12 @@
 
     <!--  JavaScript -->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-      
+
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
     <script src="scripts/jquery.easing.min.js"></script>
-    <script src="scripts/main.js"></script>
     <script src="scripts/jQuery.jTile.min.js"></script>
+        <script src="scripts/main.js"></script>
     <script type="text/javascript">
     $(document).ready(function(){
         $('.tile').jTile({effect: 'slide', direction: 'right', height: true, position: 'bottom' });     // applys jTile to all elements with class 'tile'
