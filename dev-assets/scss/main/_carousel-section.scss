@@ -1,0 +1,79 @@
+//$Carousel-section  begin
+
+.carousel-1,.carousel-2,.tiles-section {
+	margin-top:0;
+	padding-bottom: 0;
+}
+.carousel-2 {
+	height:100%;
+	background: #00636a;
+	 -moz-box-shadow:    	inset 2px 8px 20px #525252;
+    -webkit-box-shadow: 	inset 2px 8px 20px #525252;
+    box-shadow:         	inset 2px 8px 20px #525252;
+	.carousel {
+		height:100%;
+		.carousel-indicators {
+			bottom: 80px;
+			border:2px solid #d1e6e8;
+			width:100px;
+			margin-left:auto;
+			margin-right: auto;
+			left:0;
+			right:0;
+			@include border-radius(20px);
+			//IE 8 fix
+			behavior: url(../dev-assets/css/PIE.htc);
+			li {border:0;}
+			li:first-child  { background: transparent; border:1px solid #339ba6;}
+			li:nth-child(2) { background: #f8a11f;} 
+			li:nth-child(3) { background: #f61637;} 
+			li:nth-child(4) { background: #afa198;} 
+		}
+		.carousel-control.left {
+			bottom:0;
+		}
+		// carousel control arrows
+		.carousel-control {
+			@include opacity(1);
+			&:hover {
+				@include opacity(0.8);
+			}
+
+		}
+		.carousel-control.left{
+			background: url('../images/left-arrow.png')no-repeat;
+			top:80%;
+			left:5%;
+			filter:none;
+			@media (max-width:992px) {
+				background: none;
+			}
+
+		}
+		.carousel-control.right{
+			background: url('../images/right-arrow.png')no-repeat;
+			top:80%;
+			right:0;
+			@media (max-width:992px) {
+				background: none;
+			}
+		}
+		.carousel-inner {
+			img {
+				margin:20% auto;
+			}
+			.carousel-caption {
+				top:0;
+				left:5%;
+				text-align: left;
+				h1 {
+					@include font-size(100px);
+					font-weight: 300;
+					span {
+						font-family: $lobster-font;
+					}
+				}
+			}
+		}
+	}
+}

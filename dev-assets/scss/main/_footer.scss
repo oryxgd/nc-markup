@@ -1,0 +1,144 @@
+//$footer begin
+
+footer {
+	background: #d8d2cb;
+    -moz-box-shadow:    inset 2px 8px 20px #bdbdbd;
+   -webkit-box-shadow: inset 2px 8px 20px #bdbdbd;
+   box-shadow:         inset 2px 8px 20px #bdbdbd;
+	color:#9f9086;
+	padding-top:20px;
+	padding-bottom: 20px;
+
+	ul {
+		padding-left:0;
+		li {
+			list-style: none;
+			margin-bottom: 15px;
+			@include font-size(18px);
+			@include bp-medium {
+				@include font-size(12px);
+			}
+			a {
+				color:#9f9086;
+			}
+		}
+	}
+	.social-list {
+		li:first-child {
+			padding-left:0;
+		}
+		li {
+			width:32px;
+			height:32px;
+			margin-right:15px;
+			@include bp-medium {
+				margin-right:5px;
+				width:28px;
+				height: 28px;
+			}
+			a {
+				width:32px;
+				height:32px;
+				float:left;
+			}
+			.social-1 {
+				background: url('../images/social-sprite.png')no-repeat ;
+				background-position: 0px 0px;
+			}
+			.social-2 {
+				background: url('../images/social-sprite.png')no-repeat ;
+				background-position: -45px 0px;
+			}
+			.social-3 {
+				background: url('../images/social-sprite.png')no-repeat ;
+				background-position: -90px 0px;
+			}
+			.social-4 {
+				background: url('../images/social-sprite.png')no-repeat ;
+				background-position: -135px 0px;
+			}
+			.social-5 {
+				background: url('../images/social-sprite.png')no-repeat ;
+				background-position: -183px 0px;
+			}
+		}
+	}
+
+	.media {
+		.media-left {
+			float:left;
+			img {
+				@include bp-medium {
+					width:50px;
+				}
+			}
+		}
+		.media-heading {
+			@include bp-medium {
+				@include font-size(12px);
+			}
+		}
+		.media-body {
+			p {
+				@include font-size(18px);
+				@include bp-medium {
+					@include font-size(12px);
+				}
+			}
+			a {
+				color:#9f9086;
+				text-decoration: underline;
+				@include bp-medium {
+					@include font-size(12px);
+				}
+			}
+		}
+	}
+	.footer-mobile {
+		display: none;
+		@include bp-small {
+			display: block;
+		}
+		.list-inline {
+			border-bottom: 2px solid #b6ada5;
+			text-align: center;
+			li:nth-child(2) img { width:30px;}
+			li {
+				height: 40px;
+				vertical-align: bottom;
+				border-right:1px solid #b3a89e;
+				padding-top:10px;
+				padding-right: 10px;
+				img {
+					margin-right:5px;
+
+				}
+			}
+			li:last-child { border :0;}
+
+		}
+		.footer-bottom-mobile {
+			padding-left:20px;
+			padding-right: 20px;
+			ul {
+				float:left;
+				li {
+					a {
+						text-decoration: underline;
+
+					}
+				}
+			}
+			.copyright {
+				text-align: right;
+				padding-top:40px;
+			}
+		}
+	}
+	.footer-desktop {
+		@include bp-small {
+			display: none;
+		}
+	}
+
+}
