@@ -7,11 +7,30 @@
 	@media (min-width: 1600px) {
 		height: 100%;	
 	}
+	.quantity {
+		@media (max-width: 600px) {
+			display: none;
+		}
+	}
+	.col-xs-7 {
+		@media (max-width: 600px) {
+			width:100%;
+		}
+	}
+	.col-xs-5 {
+		@media (max-width: 600px) {
+			width:100%;
+		}
+	}
 	.product-name {
+		padding-left:20px;
 		h1 {
 			color:#007984;
 			font-family: $lobster-font;
 			@include font-size(80px);
+			@media (min-width:600px) and (max-width:992px) {
+				@include font-size(40px);
+			}
 		}
 		h2 {
 			color:#9ae8dd;
@@ -19,14 +38,30 @@
 		}
 	}
 	.product-options {
+		.col-xs-6 {
+			width:100%;
+			@media (max-width: 600px) {
+				width:50%;
+			}
+		}
 		.form-group {
-			margin-bottom: 20px;		
+			margin-bottom: 20px;	
+			@media (min-width:600px) and (max-width:992px) {
+				margin-bottom: 5px;
+			}	
 			span {
 				margin-right:15px;
 			}
 		}
 		label {
 			@include font-size(25px);
+			cursor: pointer;
+			@media (min-width:600px) and (max-width:992px) {
+				@include font-size(16px);
+			}
+			@media (max-width: 600px) { 
+				@include font-size(14px);
+			}
 		}
 		.add_to_cart {
 			span {
@@ -35,6 +70,12 @@
 					border-right:1px solid #dfdad7;
 					padding-right:15px;
 					padding-left:5px; 
+				}
+			}
+			.btn-default {
+				@media (max-width: 600px) {
+					@include font-size(16px);
+					width:200px;
 				}
 			}
 		}
@@ -50,6 +91,16 @@
 	        box-shadow: 0 8px 6px -6px  #ebe7e3;
 	        width:250px;
 	        text-align: center;
+	        @media (min-width:600px) and (max-width:992px) {
+	        	@include font-size(20px);
+	        	margin-top: 10px;
+	        	margin-bottom: 10px;
+	        	width:200px;
+	        }
+	        @media (max-width: 600px) {
+	        	@include font-size(16px);
+	        	width:140px;
+	        }
 			input[type="text"] {
 				width: 50px;
 				border-radius: 20px;
@@ -92,39 +143,39 @@
 			    cursor:pointer;
 			}
 			.celadon input[type="checkbox"] + label span {
-				background:url('../images/radio_buttons_sprite.png')no-repeat;
+				background:url('../images/sprites/radio_buttons_sprite.png')no-repeat;
 				background-position: 0px 1px;
 			}
 			.celadon label  { color:#007984; }
 			.celadon input[type="checkbox"]:checked + label span {
-				background:url('../images/radio_buttons_active_sprite.png')no-repeat;
+				background:url('../images/sprites/radio_buttons_active_sprite.png')no-repeat;
 				background-position: 0px 1px;
 			}
 			.mustard input[type="checkbox"] + label span {
-				background:url('../images/radio_buttons_sprite.png')no-repeat;
+				background:url('../images/sprites/radio_buttons_sprite.png')no-repeat;
 				background-position: 0px -26px;
 			}
 			.mustard label  { color:#f19911; }
 			.mustard input[type="checkbox"]:checked + label span {
-				background:url('../images/radio_buttons_active_sprite.png')no-repeat;
+				background:url('../images/sprites/radio_buttons_active_sprite.png')no-repeat;
 				background-position: 0px -26px;
 			}
 			.coral input[type="checkbox"] + label span {
-				background:url('../images/radio_buttons_sprite.png')no-repeat;
+				background:url('../images/sprites/radio_buttons_sprite.png')no-repeat;
 				background-position: 0px -53px;
 			}
 			.coral label { color:#f61737; }
 			.coral input[type="checkbox"]:checked + label span {
-				background:url('../images/radio_buttons_active_sprite.png')no-repeat;
+				background:url('../images/sprites/radio_buttons_active_sprite.png')no-repeat;
 				background-position: 0px -53px;
 			}
 			.grey input[type="checkbox"] + label span {
-				background:url('../images/radio_buttons_sprite.png')no-repeat;
+				background:url('../images/sprites/radio_buttons_sprite.png')no-repeat;
 				background-position: 0px -80px;
 			}
 			.grey label { color: #7c6f66; }
 			.grey input[type="checkbox"]:checked + label span {
-				background:url('../images/radio_buttons_active_sprite.png')no-repeat;
+				background:url('../images/sprites/radio_buttons_active_sprite.png')no-repeat;
 				background-position: 0px -80px;
 			}
 		}

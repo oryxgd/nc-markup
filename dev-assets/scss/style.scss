@@ -4,12 +4,12 @@
 @import "main/content";
 
 //mobility page
-@import "main/parallax-section";
-@import "main/carousel-section";
-@import "main/description-section";
-@import "main/features-section";
-@import "main/tiles-section";
-@import "main/add-to-cart-section";
+@import "main/sections/parallax-section";
+@import "main/sections/carousel-section";
+@import "main/sections/description-section";
+@import "main/sections/features-section";
+@import "main/sections/tiles-section";
+@import "main/sections/add-to-cart-section";
 
 //footer
 @import "main/footer";
@@ -26,7 +26,9 @@ html {
     width: 100%;
     height: 100%;
 }
-
+.row {
+    margin:0 !important;
+}
 //modal styles
 .modal-open {
     overflow: auto !important;

@@ -6,6 +6,9 @@
 	margin-top: 0;
 	text-align: left;
 	background: #aa9c92;
+	@media (min-width:600px) and (max-width:992px) {
+		padding-bottom: 40px;
+	}
 	@media (min-width: 1600px) {
 		height: 100%;	
 	}
@@ -17,6 +20,9 @@
 	.features-description{
 		padding-top:20px;
 		padding-bottom: 40px;
+		@media (min-width:600px) and (max-width:992px) {
+			padding-left:20px;
+		}
 		h1 {
 			@include font-size(80px);
 			color:#9ae8dd;
@@ -39,12 +45,18 @@
 	}
 	.category-description {
 		padding-top:20px;
+		@media (min-width:600px) and (max-width:992px) {
+			padding-left:20px;
+		}
 		h4 {
 			color:#9ae8dd;
 			@include font-size(25px);
 			font-weight: 600;
 			margin-left:40px;
 			margin-bottom: 20px;
+			@media (max-width: 600px) {
+				@include font-size(18px);
+			}
 		}
 		ul{
 			padding-left: 0;
@@ -53,21 +65,28 @@
 				padding-left:60px;
 				@include font-size(18px);
 				color:#fff;
+				@media (min-width:600px) and (max-width:992px) {
+					@include font-size(15px);
+
+				}
+				@media (max-width: 600px) {
+					@include font-size(15px);
+				}
 			}
 		}
 		.general {
 			ul {
 
 				li.weight {
-					background: url('../images/features-icons/general-icons-sprite.png')no-repeat;
+					background: url('../images/sprites/general-icons-sprite.png')no-repeat;
 					background-position: 0 0px;
 				}
 				li.sizes {
-					background: url('../images/features-icons/general-icons-sprite.png')no-repeat;
+					background: url('../images/sprites/general-icons-sprite.png')no-repeat;
 					background-position: 0 -75px;
 				}
 				li.materials {
-					background: url('../images/features-icons/general-icons-sprite.png')no-repeat;
+					background: url('../images/sprites/general-icons-sprite.png')no-repeat;
 					background-position: 0 -145px;
 				}
 			}
@@ -76,27 +95,27 @@
 		.parts {
 			ul {
 				li.frame {
-					background: url('../images/features-icons/parts-icons-sprite.png')no-repeat;
+					background: url('../images/sprites/parts-icons-sprite.png')no-repeat;
 					background-position: 0 0px;
 				}
 				li.chainWheel {
-					background: url('../images/features-icons/parts-icons-sprite.png')no-repeat;
+					background: url('../images/sprites/parts-icons-sprite.png')no-repeat;
 					background-position: 0 -60px;
 				}
 				li.pedals {
-					background: url('../images/features-icons/parts-icons-sprite.png')no-repeat;
+					background: url('../images/sprites/parts-icons-sprite.png')no-repeat;
 					background-position: 0 -125px;
 				}
 				li.wheels {
-					background: url('../images/features-icons/parts-icons-sprite.png')no-repeat;
+					background: url('../images/sprites/parts-icons-sprite.png')no-repeat;
 					background-position: 0 -185px;
 				}
 				li.frame-1 {
-					background: url('../images/features-icons/parts-icons-sprite.png')no-repeat;
+					background: url('../images/sprites/parts-icons-sprite.png')no-repeat;
 					background-position: 0 -250px;
 				}
 				li.stem {
-					background: url('../images/features-icons/parts-icons-sprite.png')no-repeat;
+					background: url('../images/sprites/parts-icons-sprite.png')no-repeat;
 					background-position: 0 -310px;
 				}
 			}
@@ -108,7 +127,7 @@
 					padding-left:80px;
 				}
 				li.hugo-bicycle {
-					background: url('../images/features-icons/box-icons-sprite.png')no-repeat;
+					background: url('../images/sprites/box-icons-sprite.png')no-repeat;
 					background-position: 0 0px;
 				}
 			}

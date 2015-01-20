@@ -28,6 +28,7 @@
 			li:nth-child(2) { background: #f8a11f;} 
 			li:nth-child(3) { background: #f61637;} 
 			li:nth-child(4) { background: #afa198;} 
+			@media (max-width: 992px) { bottom:0;}
 		}
 		.carousel-control.left {
 			bottom:0;
@@ -66,9 +67,15 @@
 				top:0;
 				left:5%;
 				text-align: left;
+				@media (max-width: 992px) {
+					top:-12%;
+				}
 				h1 {
 					@include font-size(100px);
 					font-weight: 300;
+					@media (max-width: 992px) {
+						@include font-size(40px);
+					}
 					span {
 						font-family: $lobster-font;
 					}

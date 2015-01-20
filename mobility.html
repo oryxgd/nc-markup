@@ -103,7 +103,7 @@
     <section class="parallax-section" data-type="background" data-speed="10">
     <!--right side icons -->
         <div class="fixed-icons">
-            <ul>
+            <ul class="shopping-cart-fixed">
                 <li><img src="dev-assets/images/icon-cart.png" alt="icon"></li>
                 <li>BUY</li>
             </ul>
@@ -220,9 +220,9 @@
     <section class="tiles-section">
         <div class="col-xs-12 main-container">
             <div class="col-md-9">
-                <div class="row">
-                     <div class="col-xs-6">
-                        <h1>Hugo <br>Details </h1>
+                <div class="row hugo-details">
+                     <div class="col-xs-6 ">
+                        <h1><span>Hugo</span> <br>Details </h1>
                      </div>
                      <div class="col-md-3">
                         <div class="tile">
@@ -245,7 +245,7 @@
                         </div>                     
                      </div>
                      <div class="col-md-3">
-                        <div class="tile">
+                        <div class="tile ">
                         <img src="dev-assets/images/tiles/tile-6.jpg" alt="tile" >
                         <div rel="rollover">One sentence details for each pictues</div>
                         </div>                     
@@ -253,16 +253,18 @@
                 </div>
             </div>
             <div class="col-md-3">
-                <div class="tile">
-                <img src="dev-assets/images/tiles/tile-4.jpg" alt="tile" class="img-responsive">
-                <div rel="rollover">One sentence details for each pictues</div>
-                        </div>            
+                <div class="tile last-tile">
+                    <img src="dev-assets/images/tiles/tile-4.jpg" alt="tile" class="img-responsive">
+                    <div rel="rollover">One sentence details for each pictues</div>
+                </div>            
             </div>
         </div>
     </section>  
 
     <section class="description-section">
-        <div class="col-md-6 col-md-offset-6 description-text">
+
+        <div class="col-xs-6"></div>
+        <div class="col-xs-6 description-text">
             <h1>Hugo</h1>
             <h2>Designed in<br> France </h2>
             <p>Seasonal colorful bicycle: 
@@ -275,6 +277,8 @@
             <p>One couple, two dimensions 
             Two bicycles sizes that everyone can cycle on Hugo.</p>
         </div>
+  
+
     </section>
 
     <section class="features-section">
@@ -298,7 +302,7 @@
             </div>
             <div class="row">
                 <div class="category-description">
-                    <div class="col-xs-3">
+                    <div class="col-xs-6 col-lg-3">
                         <div class="general">
                         <h4>General</h4>
                             <ul>
@@ -309,7 +313,7 @@
                                 </li>
                                 <li class="sizes">
                                     <p><strong>Sizes</strong></p>
-                                    <p>170cmx50cmx100cm</p>
+                                    <p>170cmx50cm</p>
                                 </li>
                                 <li class="materials">
                                     <p><strong>Materials</strong></p>
@@ -321,7 +325,7 @@
                         </div>
                     </div>
 
-                    <div class="col-xs-3">
+                    <div class="col-xs-6 col-lg-3">
                         <div class="parts">
                         <h4>Parts</h4>
                             <ul>
@@ -353,7 +357,7 @@
                         </div>
                     </div>
 
-                    <div class="col-xs-4">
+                    <div class="col-xs-12 col-lg-4">
                         <div class="box">
                         <h4>In the Box</h4>
                             <ul>
@@ -382,15 +386,15 @@
                 <h2>Features & Specifications</h2>
             </div>
 
-            <div class="col-md-9">
+            <div class="col-xs-7 col-lg-9">
                 <div class="product-image">
-                    <img src="dev-assets/images/bicycle-product.png" class="image-product" class="img-responsive" alt="product">
+                    <img src="dev-assets/images/bicycle-product.png" class="image-product img-responsive"  alt="product">
                 </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-xs-5 col-lg-3">
                 <div class="product-options">
 
-                    <div class="select_color">
+                    <div class="select_color col-xs-6 col-lg-12 col-md-12">
                         <h3>Select your color</h3>
                         <div class="form-group celadon">
                             <input type="checkbox" id="b1" name="bb1">
@@ -410,7 +414,7 @@
                         </div>
                     </div>
                     
-                    <div class="select_size">
+                    <div class="select_size col-xs-6 col-lg-12 col-md-12">
                         <h3>Select your size</h3>
                         <div class="form-group">
                             <input type="checkbox" id="c1" name="cc1">
@@ -422,12 +426,14 @@
                         </div>
                     </div>
 
+                    <div class="quantity">
+                        <h3>Quantity:
+                            <a href="#"><img src="dev-assets/images/plus.png"></a>
+                            <input type="text" placeholder="01">
+                            <a href="#"><img src="dev-assets/images/minus.png"></a>
+                        </h3>
+                    </div>
 
-                    <h3>Quantity:
-                        <a href="#"><img src="dev-assets/images/plus.png"></a>
-                        <input type="text" placeholder="01">
-                        <a href="#"><img src="dev-assets/images/minus.png"></a>
-                    </h3>
                     <div class="add_to_cart">
                         <button class="btn btn-default add-to-cart"><span><img src="dev-assets/images/icon-cart.png" alt="cart"></span>Add to cart</button>
                     </div>
@@ -500,15 +506,14 @@
 
     <!--  JavaScript -->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+    <script src="scripts/main.js"></script>
+    <script src="scripts/jquery.animate_from_to-1.0.min.js"></script>
     <script src="scripts/jquery.easing.min.js"></script>
-    <script src="scripts/jQuery.jTile.min.js"></script>
-        <script src="scripts/main.js"></script>
+    <script src="scripts/jQuery.jTile.js"></script>
     <script type="text/javascript">
     $(document).ready(function(){
-        $('.tile').jTile({effect: 'slide', direction: 'right', height: true, position: 'bottom' });     // applys jTile to all elements with class 'tile'
+        $('.tile').jTile({effect: 'slide', direction: 'right', height: true, position: 'top' });     // applys jTile to all elements with class 'tile'
     });
     </script>
 

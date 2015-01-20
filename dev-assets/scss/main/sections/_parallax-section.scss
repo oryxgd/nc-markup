@@ -40,14 +40,45 @@
 	  	}
 	  }
 	  .product {
+	  	@media (min-width: 600px) and (max-width: 992px) {
+	  		padding-left:60px;
+	  	}
+	  	@media (max-width: 600px) {
+	  		padding-left:20px;
+	  		img {
+	  			width:60%;
+	  		}
+	  	}
 	  	h1 {
 	  		color:#6dcacd;
 	  		@include font-size(90px);
 	  		font-family: $lobster-font;
+	  		@media (min-width:600px) and (max-width:992px) {
+	  			@include font-size(70px);
+	  		}
+	  		@media (max-width: 600px) {
+	  			@include font-size(40px);
+	  		}
 	  	}
 	  	h2 {
 	  		color:#6dcacd;
 	  		@include font-size(45px);
+	  		@media (max-width: 600px) {
+	  			@include font-size(25px);
+	  		}
+	  	}
+	  	.add_to_cart {
+	  		@media (min-width: 600px) and (max-width: 992px) {
+	  			width:260px;
+	  		}
+	  		@media (max-width: 600px) {
+	  			width:170px;
+	  		}
+			.btn-default {
+				@media (max-width: 600px) {
+					@include font-size(18px);
+				}
+			}
 	  	}
 
 	  }
@@ -58,7 +89,9 @@
 .add_to_cart {
 	margin-top:20px;
 	width:260px;
-
+	@media (min-width:600px) and (max-width:992px) {
+		width:200px;
+	}
 	.btn-default {
 		@include border-radius(30px);
 		width:100%;
@@ -67,6 +100,9 @@
 		border-color: #dcd4cd;
 		behavior: url(../dev-assets/css/PIE.htc);
 		padding:0;
+		@media (min-width:600px) and (max-width:992px) {
+			@include font-size(20px);
+		}
 		span {
 			float:left;
 			padding:3px;

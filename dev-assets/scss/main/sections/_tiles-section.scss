@@ -5,22 +5,52 @@
 .tiles-section {
 	height:100%;
 	overflow: hidden;
-	.main-container {
-		.row { margin-right:0;}
+	text-align: left;
 		div[class*="col-"] {
 			padding:0;
 		}
+	.main-container {
+		.row { margin-right:0;}
+
+		.hugo-details {
+			background: #afa198;
+		}
 		img { 
-			width:100%;
 			display: block;
 			height: auto;
+			@media (max-width: 992px) {
+				width:100%;
+			}
 		}
-		.col-xs-3 img {height: auto;}
+		.last-tile img {height: auto;@media (min-width: 1600px) { width:100%;}}
 		.tile {
 			div[rel="rollover"] {
-				@include font-size(47px);
+				@include font-size(37px);
 				color:#fff;
 				font-weight: 300;
+				@media (max-width: 600px) {
+					@include font-size(25px);
+				}
+			}
+		}
+		h1 {
+			@include font-size(70px);
+			font-weight: 300;
+			color:#fff;
+			margin-left:100px;
+			margin-top:150px;
+			@media (min-width:600px) and (max-width:992px) {
+				margin-left:60px;
+				margin-top:100px;
+				@include font-size(60px);
+			}
+			@media (max-width: 600px) {
+				margin-left:10px;
+				margin-top:50px;
+				@include font-size(40px);
+			}
+			span {
+				font-family: $lobster-font;
 			}
 		}
 	}
@@ -35,6 +65,8 @@
 		text-align: left;
 		padding: 10px;
 		overflow: hidden;
+		width:100% !important;
+		height:100% !important;
 	}
 	.jTile-black{
 		color:#000;
