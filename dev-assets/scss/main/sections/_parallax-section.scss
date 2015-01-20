@@ -38,6 +38,10 @@
 	  			width:30px;
 	  		}
 	  	}
+	  	.active-cart {
+	  		display: none;
+	  		img { width:50px;}
+	  	}
 	  }
 	  .product {
 	  	@media (min-width: 600px) and (max-width: 992px) {

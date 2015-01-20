@@ -1,0 +1,528 @@
+<!doctype html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <title>Mobility</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <link rel="shortcut icon" href="/favicon.ico">
+
+    <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="dev-assets/css/style.css">
+    <link rel="stylesheet" href="dev-assets/css/bootstrap.css">
+    
+
+    <!--fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Quicksand:300,400,700' rel='stylesheet' type='text/css'>
+    <!--fonts -->
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!-- endbuild -->
+  </head>
+
+<body>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title" id="myModalLabel">Find Us on the Map</h4>
+          </div>
+          <div class="modal-body">
+              <iframe
+                frameborder="0" style="border:0"
+                src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCnbL8dElGXOgOnLCQo1ukdRxK-N7jG7-E
+                  &q=Butchart+Gardens+Victoria+BC
+                  &attribution_source=Google+Maps+Embed+API
+                  &attribution_web_url=http://www.butchartgardens.com/
+                  &attribution_ios_deep_link_id=comgooglemaps://?daddr=Butchart+Gardens+Victoria+BC">
+              </iframe>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /.modal -->
+<div id="loader-wrapper">
+    <div id="loader"></div>
+</div>
+
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top"><img src="dev-assets/images/logo.jpg" alt="logo" class="img-responsive"></a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li>
+                        <a class="page-scroll" href="#page-top">HOME</a>
+                    </li>
+                    <li class="current">
+                        <a class="page-scroll" href="#page-top"><img src="dev-assets/images/world-icon.png">WORLD</a>
+                    </li>
+                    <li class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">PRODUCTS<span><img src="dev-assets/images/dropdown-icon.png" alt="icon"></span></a>
+                      <ul class="dropdown-menu" role="menu">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                      </ul>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#services"><img src="dev-assets/images/icon-cart.png" class="shopping-cart" alt="icon">CART</a>
+                    </li>
+                    <li class="last-list-item">
+                        <ul class="languages">
+                            <li><a href="#">FR</a></li>
+                            <li><a href="#">中国</a></li>
+                            <li class="active"><a href="#">ENG</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <section class="parallax-section" data-type="background" data-speed="10">
+    <!--right side icons -->
+        <div class="fixed-icons">
+            <ul class="shopping-cart-fixed active-cart">
+                <li><img src="dev-assets/images/icon-cart-active.png" alt="icon"></li>
+                <li>BUY</li>
+            </ul>
+            <ul class="shopping-cart-fixed non-active-cart">
+                <li><img src="dev-assets/images/icon-cart.png" alt="icon"></li>
+                <li>BUY</li>
+            </ul>
+            <ul class="scrollToTop">
+                <li><img src="dev-assets/images/top-arrow.png" alt="icon"></li>
+                <li><a href="#" >TOP</a></li>
+            </ul>
+        </div>
+    <!--right side icons -->
+
+        <div class="container">
+            <div class="product">
+                <h1>Hugo</h1>
+                <h2>Flowing Fast</h2>
+                <img src="dev-assets/images/products/people-1.jpg" alt="product name">
+                <div class="add_to_cart">
+                    <a href="#add-to-cart-section" class="btn btn-default"><span><img src="dev-assets/images/icon-cart.png" alt="cart"></span>Add to cart</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="carousel-1">
+        <div id="carousel-example-generic-main" class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic-main" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic-main" data-slide-to="1"></li>
+            <li data-target="#carousel-example-generic-main" data-slide-to="2"></li>
+          </ol>
+
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner" role="listbox">
+            <div class="item active">
+              <img src="dev-assets/images/slider-image-1.jpg" alt="slide">
+
+            </div>
+            <div class="item">
+              <img src="dev-assets/images/slider-image-1.jpg" alt="slide">
+
+            </div>
+            <div class="item">
+              <img src="dev-assets/images/slider-image-1.jpg" alt="slide">
+            </div>
+          </div>
+
+          <!-- Controls -->
+          <a class="left carousel-control" href="#carousel-example-generic-main" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#carousel-example-generic-main" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+
+    </section>
+    <section class="carousel-2">
+        <div id="carousel-example-generic1" class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic1" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic1" data-slide-to="1"></li>
+            <li data-target="#carousel-example-generic1" data-slide-to="2"></li>
+            <li data-target="#carousel-example-generic1" data-slide-to="3"></li>
+          </ol>
+
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner" role="listbox">
+            <div class="item active">
+              <div class="carousel-caption">
+                  <h1><span>Hugo</span> Celadon </h1>
+              </div>
+              <div class="col-md-6"><img src="dev-assets/images/bicycle-image-1.png" class="img-responsive" alt="slide"></div>
+              <div class="col-md-6"><img src="dev-assets/images/bicycle-image-2.png" class="img-responsive" alt="slide"></div>
+            </div>
+            <div class="item">
+            <div class="carousel-caption">
+                  <h1><span>Hugo</span> Celadon </h1>
+              </div>
+              <div class="col-md-6"><img src="dev-assets/images/bicycle-image-1.png" class="img-responsive" alt="slide"></div>
+              <div class="col-md-6"><img src="dev-assets/images/bicycle-image-2.png" class="img-responsive" alt="slide"></div>
+            </div>
+            <div class="item">
+            <div class="carousel-caption">
+                  <h1><span>Hugo</span> Celadon </h1>
+              </div>
+              <div class="col-md-6"><img src="dev-assets/images/bicycle-image-1.png" class="img-responsive" alt="slide"></div>
+              <div class="col-md-6"><img src="dev-assets/images/bicycle-image-2.png" class="img-responsive" alt="slide"></div>
+            </div>
+            <div class="item">
+            <div class="carousel-caption">
+                  <h1><span>Hugo</span> Celadon </h1>
+              </div>
+              <div class="col-md-6"><img src="dev-assets/images/bicycle-image-1.png" class="img-responsive" alt="slide"></div>
+              <div class="col-md-6"><img src="dev-assets/images/bicycle-image-2.png" class="img-responsive" alt="slide"></div>
+            </div>
+          </div>
+
+          <!-- Controls -->
+          <a class="left carousel-control" href="#carousel-example-generic1" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#carousel-example-generic1" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+    </section>
+
+
+    <section class="tiles-section">
+        <div class="col-xs-12 main-container">
+            <div class="col-md-9">
+                <div class="row hugo-details">
+                     <div class="col-xs-6 ">
+                        <h1><span>Hugo</span> <br>Details </h1>
+                     </div>
+                     <div class="col-md-3">
+                        <div class="tile">
+                        <img src="dev-assets/images/tiles/tile-2.jpg" alt="tile" >
+                        <div rel="rollover">One sentence details for each pictues</div>
+                        </div>                     
+                     </div>
+                     <div class="col-md-3">
+                        <div class="tile">
+                        <img src="dev-assets/images/tiles/tile-3.jpg" alt="tile" >
+                        <div rel="rollover">One sentence details for each pictues</div>
+                        </div>                     
+                     </div>
+                </div>
+                <div class="row">
+                     <div class="col-md-9">
+                        <div class="tile">
+                        <img src="dev-assets/images/tiles/tile-5.jpg" alt="tile" >
+                        <div rel="rollover">One sentence details for each pictues</div>
+                        </div>                     
+                     </div>
+                     <div class="col-md-3">
+                        <div class="tile ">
+                        <img src="dev-assets/images/tiles/tile-6.jpg" alt="tile" >
+                        <div rel="rollover">One sentence details for each pictues</div>
+                        </div>                     
+                     </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="tile last-tile">
+                    <img src="dev-assets/images/tiles/tile-4.jpg" alt="tile" class="img-responsive">
+                    <div rel="rollover">One sentence details for each pictues</div>
+                </div>            
+            </div>
+        </div>
+    </section>  
+
+    <section class="description-section">
+
+        <div class="col-xs-6"></div>
+        <div class="col-xs-6 description-text">
+            <h1>Hugo</h1>
+            <h2>Designed in<br> France </h2>
+            <p>Seasonal colorful bicycle: 
+            Bicycle cosmetic change according to fashion trends.</p>
+             
+            <p>Safe without aesthetic compromise 
+            Our bicycles are equipped with breaking system and 
+            both fixed gear and free wheel mode. </p>
+
+            <p>One couple, two dimensions 
+            Two bicycles sizes that everyone can cycle on Hugo.</p>
+        </div>
+  
+
+    </section>
+
+    <section class="features-section">
+        <div class="container">
+            <div class="row row-shadow">
+                <div class="col-md-6">
+                    <div class="features-description">
+                        <h1>Hugo</h1>
+                        <h2>Features & Specifications</h2>
+                        <h3>Seasonal colorful bicycle: </h3>
+                        <p>Bicycle cosmetic change according to fashion trends. </p>
+
+                        <h3>Safe without aesthetic compromise </h3>
+                        <p>Our bicycles are equipped with breaking system and 
+                        both fixed gear and free wheel mode. </p>
+
+                        <h3>One couple, two dimensions </h3>
+                        <p>Two bicycles sizes that everyone can cycle on Hugo. </p>           
+                    </div>
+                </div>     
+            </div>
+            <div class="row">
+                <div class="category-description">
+                    <div class="col-xs-6 col-lg-3">
+                        <div class="general">
+                        <h4>General</h4>
+                            <ul>
+                                <li class="weight">
+                                    <p><strong>Weight</strong></p>
+                                    <p>9 Kilograms</p>
+                                    <p>20 Pounds</p>
+                                </li>
+                                <li class="sizes">
+                                    <p><strong>Sizes</strong></p>
+                                    <p>170cmx50cm</p>
+                                </li>
+                                <li class="materials">
+                                    <p><strong>Materials</strong></p>
+                                    <p>Chromoly</p>
+                                    <p>Aluminium</p>
+                                    <p>Rubber</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-6 col-lg-3">
+                        <div class="parts">
+                        <h4>Parts</h4>
+                            <ul>
+                                <li class="frame">
+                                    <p><strong>Frame</strong></p>
+                                    <p>9 Kilograms</p>
+                                </li>
+                                <li class="chainWheel">
+                                    <p><strong>ChainWheel</strong></p>
+                                    <p>170c</p>
+                                </li>
+                                <li class="pedals">
+                                    <p><strong>Pedals</strong></p>
+                                    <p>170c</p>
+                                </li>
+                                <li class="wheels">
+                                    <p><strong>Wheels</strong></p>
+                                    <p>170 c8</p>
+                                </li>
+                                <li class="frame-1">
+                                    <p><strong>Frame</strong></p>
+                                    <p>9 Kilograms</p>
+                                </li>
+                                <li class="stem">
+                                    <p><strong>Stem</strong></p>
+                                    <p>170c</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-12 col-lg-4">
+                        <div class="box">
+                        <h4>In the Box</h4>
+                            <ul>
+                                <li class="hugo-bicycle">
+                                    <p><strong>Hugo Bicycle</strong></p>
+                                    <p>9 Kilograms</p>
+                                    <p>20 pounds</p>
+                                </li>
+                                <li class="sold-separatly">
+                                    <p><strong>Sold Separatly</strong></p>
+                                    <p>170cmx50cmx100cm</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div> <!-- category  -->
+            </div>
+
+        </div>
+    </section>
+
+    <section class="add-to-cart-section" id="add-to-cart-section">
+        <div class="container">
+            <div class="product-name">
+                <h1>Hugo</h1>
+                <h2>Features & Specifications</h2>
+            </div>
+
+            <div class="col-xs-7 col-lg-9">
+                <div class="product-image">
+                    <img src="dev-assets/images/bicycle-product.png" class="image-product img-responsive"  alt="product">
+                </div>
+            </div>
+            <div class="col-xs-5 col-lg-3">
+                <div class="product-options">
+
+                    <div class="select_color col-xs-6 col-lg-12 col-md-12">
+                        <h3>Select your color</h3>
+                        <div class="form-group celadon">
+                            <input type="radio" id="b1" name="b1">
+                            <label for="b1"><span></span>Celadon</label>
+                        </div>
+                        <div class="form-group mustard">
+                            <input type="radio" id="b2" name="bb2">
+                            <label for="b2"><span></span>Mustard</label>
+                        </div>
+                        <div class="form-group coral">
+                            <input type="radio" id="b3" name="bb3">
+                            <label for="b3"><span></span>Coral</label>
+                        </div>
+                        <div class="form-group grey">
+                            <input type="radio" id="b4" name="bb4">
+                            <label for="b4"><span></span>Warm Grey</label>
+                        </div>
+                    </div>
+                    
+                    <div class="select_size col-xs-6 col-lg-12 col-md-12">
+                        <h3>Select your size</h3>
+                        <div class="form-group">
+                            <input type="radio" id="c1" name="cc1">
+                            <label for="c1"><span></span>Size:L</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="radio" id="c2" name="cc2">
+                            <label for="c2"><span></span>Size:M</label>
+                        </div>
+                    </div>
+
+                    <div class="quantity">
+                        <h3>Quantity:
+                            <a href="#"><img src="dev-assets/images/plus.png"></a>
+                            <input type="text" placeholder="01">
+                            <a href="#"><img src="dev-assets/images/minus.png"></a>
+                        </h3>
+                    </div>
+
+                    <div class="add_to_cart">
+                        <button class="btn btn-default add-to-cart"><span><img src="dev-assets/images/icon-cart.png" alt="cart"></span>Add to cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-desktop">
+                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                    <ul>
+                        <li><a href="#">About NC Natural Cycle</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                    </ul>                
+                </div>
+                <div class="col-xs-5 col-sm-5 col-md-5 col-lg-3">
+                    <ul>
+                        <li>Explore Our World</li>
+                        <li>
+                            <ul class="social-list list-inline">
+                                <li><a href="#" class="social-1"></a></li>
+                                <li><a href="#" class="social-2"></a></li>
+                                <li><a href="#" class="social-3"></a></li>
+                                <li><a href="#" class="social-4"></a></li>
+                                <li><a href="#" class="social-5"></a></li>
+                            </ul>
+                        </li> 
+                    </ul>
+                </div>
+
+                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-3">
+                    <div class="media">
+                      <a class="media-left" href="#"  data-toggle="modal" data-target="#myModal">
+                        <img src="dev-assets/images/map-icon.png" alt="map">
+                      </a>
+                      <div class="media-body">
+                        <h4 class="media-heading">Shop Near By</h4>
+                        <p>Find a shop or a reseller near by your home.</p>
+                        <a href="#"  data-toggle="modal" data-target="#myModal">Start Searching</a>
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-mobile">
+                <ul class="list-inline">
+                    <li><img src="dev-assets/images/world-icon.png" alt="icon"><a href="#">WORLD</a></li>
+                    <li><img src="dev-assets/images/map-icon.png" alt="icon"><a href="#">SHOP NEAR BY</a></li>
+                    <li><img src="dev-assets/images/icon-cart.png" alt="icon"><a href="#">CART</a></li>
+                </ul>
+
+                <div class="footer-bottom-mobile">
+                    <ul>
+                        <li><a href="#">About NC Natural Cycle</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                    </ul>  
+                    <div class="copyright">
+                        <p>©2014 NC Natural Cycle,<br>All Rights Reserved</p>
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!--  JavaScript -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    <script src="scripts/main.js"></script>
+    <script src="scripts/jquery.animate_from_to-1.0.min.js"></script>
+    <script src="scripts/jquery.easing.min.js"></script>
+    <script src="scripts/jQuery.jTile.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function(){
+        $('.tile').jTile({effect: 'slide', direction: 'right', height: true, position: 'top' });     // applys jTile to all elements with class 'tile'
+    });
+    </script>
+
+</script>
+</body>
+</html>
