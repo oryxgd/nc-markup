@@ -53,7 +53,9 @@
       </div>
     </div>
     <!-- /.modal -->
-
+<div id="loader-wrapper">
+    <div id="loader"></div>
+</div>
 
 
     <!-- Navigation -->
@@ -103,7 +105,11 @@
     <section class="parallax-section" data-type="background" data-speed="10">
     <!--right side icons -->
         <div class="fixed-icons">
-            <ul class="shopping-cart-fixed">
+            <ul class="shopping-cart-fixed active-cart">
+                <li><img src="dev-assets/images/icon-cart-active.png" alt="icon"></li>
+                <li>BUY</li>
+            </ul>
+            <ul class="shopping-cart-fixed non-active-cart">
                 <li><img src="dev-assets/images/icon-cart.png" alt="icon"></li>
                 <li>BUY</li>
             </ul>
@@ -118,7 +124,7 @@
             <div class="product">
                 <h1>Hugo</h1>
                 <h2>Flowing Fast</h2>
-                <img src="dev-assets/images/people-1.jpg" alt="product name">
+                <img src="dev-assets/images/products/people-1.jpg" alt="product name">
                 <div class="add_to_cart">
                     <a href="#add-to-cart-section" class="btn btn-default"><span><img src="dev-assets/images/icon-cart.png" alt="cart"></span>Add to cart</a>
                 </div>
@@ -397,19 +403,19 @@
                     <div class="select_color col-xs-6 col-lg-12 col-md-12">
                         <h3>Select your color</h3>
                         <div class="form-group celadon">
-                            <input type="checkbox" id="b1" name="bb1">
+                            <input type="radio" id="b1" name="b1">
                             <label for="b1"><span></span>Celadon</label>
                         </div>
                         <div class="form-group mustard">
-                            <input type="checkbox" id="b2" name="bb2">
+                            <input type="radio" id="b2" name="bb2">
                             <label for="b2"><span></span>Mustard</label>
                         </div>
                         <div class="form-group coral">
-                            <input type="checkbox" id="b3" name="bb3">
+                            <input type="radio" id="b3" name="bb3">
                             <label for="b3"><span></span>Coral</label>
                         </div>
                         <div class="form-group grey">
-                            <input type="checkbox" id="b4" name="bb4">
+                            <input type="radio" id="b4" name="bb4">
                             <label for="b4"><span></span>Warm Grey</label>
                         </div>
                     </div>
@@ -417,11 +423,11 @@
                     <div class="select_size col-xs-6 col-lg-12 col-md-12">
                         <h3>Select your size</h3>
                         <div class="form-group">
-                            <input type="checkbox" id="c1" name="cc1">
+                            <input type="radio" id="c1" name="cc1">
                             <label for="c1"><span></span>Size:L</label>
                         </div>
                         <div class="form-group">
-                            <input type="checkbox" id="c2" name="cc2">
+                            <input type="radio" id="c2" name="cc2">
                             <label for="c2"><span></span>Size:M</label>
                         </div>
                     </div>

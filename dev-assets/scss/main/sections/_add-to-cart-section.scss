@@ -111,10 +111,10 @@
 
 		.select_size {
 			label { color:#c3b6ad; }
-			input[type="checkbox"] {
+			input[type="radio"] {
 				display: none;
 			}
-			input[type="checkbox"] + label span {
+			input[type="radio"] + label span {
 			    display:inline-block;
 			    width:29px;
 			    height:29px;
@@ -122,7 +122,7 @@
 			    background:url('../images/radio_button.png') left top no-repeat;
 			    cursor:pointer;
 			}
-			input[type="checkbox"]:checked + label span {
+			input[type="radio"]:checked + label span {
 			    background:url('../images/radio_button_active.png')no-repeat;
 			    background-position: 0 0px;
 			    @include border-radius(20px);
@@ -132,49 +132,49 @@
 		}
 
 		.select_color {
-			input[type="checkbox"] {
+			input[type="radio"] {
 				display: none;
 			}
-			input[type="checkbox"] + label span {
+			input[type="radio"] + label span {
 			    display:inline-block;
 			    width:29px;
 			    height:29px;
 			    vertical-align:middle;
 			    cursor:pointer;
 			}
-			.celadon input[type="checkbox"] + label span {
+			.celadon input[type="radio"] + label span {
 				background:url('../images/sprites/radio_buttons_sprite.png')no-repeat;
 				background-position: 0px 1px;
 			}
 			.celadon label  { color:#007984; }
-			.celadon input[type="checkbox"]:checked + label span {
+			.celadon input[type="radio"]:checked + label span {
 				background:url('../images/sprites/radio_buttons_active_sprite.png')no-repeat;
 				background-position: 0px 1px;
 			}
-			.mustard input[type="checkbox"] + label span {
+			.mustard input[type="radio"] + label span {
 				background:url('../images/sprites/radio_buttons_sprite.png')no-repeat;
 				background-position: 0px -26px;
 			}
 			.mustard label  { color:#f19911; }
-			.mustard input[type="checkbox"]:checked + label span {
+			.mustard input[type="radio"]:checked + label span {
 				background:url('../images/sprites/radio_buttons_active_sprite.png')no-repeat;
 				background-position: 0px -26px;
 			}
-			.coral input[type="checkbox"] + label span {
+			.coral input[type="radio"] + label span {
 				background:url('../images/sprites/radio_buttons_sprite.png')no-repeat;
 				background-position: 0px -53px;
 			}
 			.coral label { color:#f61737; }
-			.coral input[type="checkbox"]:checked + label span {
+			.coral input[type="radio"]:checked + label span {
 				background:url('../images/sprites/radio_buttons_active_sprite.png')no-repeat;
 				background-position: 0px -53px;
 			}
-			.grey input[type="checkbox"] + label span {
+			.grey input[type="radio"] + label span {
 				background:url('../images/sprites/radio_buttons_sprite.png')no-repeat;
 				background-position: 0px -80px;
 			}
 			.grey label { color: #7c6f66; }
-			.grey input[type="checkbox"]:checked + label span {
+			.grey input[type="radio"]:checked + label span {
 				background:url('../images/sprites/radio_buttons_active_sprite.png')no-repeat;
 				background-position: 0px -80px;
 			}
