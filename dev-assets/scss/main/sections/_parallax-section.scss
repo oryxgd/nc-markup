@@ -101,6 +101,8 @@
 		width:100%;
 		@include font-size(30px);
 		color:#7c6f66;
+		position: relative;
+		z-index: 200;
 		border-color: #dcd4cd;
 		behavior: url(../dev-assets/css/PIE.htc);
 		padding:0;
@@ -114,6 +116,11 @@
 			padding-right:6px;
 			background: #dcd8d6;
 			@include border-radii(20px,0,0,20px);
+			border-radius: 20px;
+			border-top-right-radius: 0;
+			border-bottom-right-radius: 0;
+			behavior: url(../dev-assets/css/PIE.htc);
+
 			img {
 				position: relative;
 				bottom: 3px;

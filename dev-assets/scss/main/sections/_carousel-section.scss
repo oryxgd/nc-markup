@@ -4,6 +4,11 @@
 	margin-top:0;
 	padding-bottom: 0;
 }
+.carousel-1 {
+	.carousel-indicators {
+		li,li.active { behavior: url(../dev-assets/css/PIE.htc); }
+	}
+}
 .carousel-2 {
 	height:100%;
 	background: #00636a;
@@ -23,7 +28,7 @@
 			@include border-radius(20px);
 			//IE 8 fix
 			behavior: url(../dev-assets/css/PIE.htc);
-			li {border:0;}
+			li,li.active {border:0; behavior: url(../dev-assets/css/PIE.htc);}
 			li:first-child  { background: transparent; border:1px solid #339ba6;}
 			li:nth-child(2) { background: #f8a11f;} 
 			li:nth-child(3) { background: #f61637;} 
