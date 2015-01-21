@@ -55,9 +55,29 @@
       </div>
     </div>
     <!-- /.modal -->
-<div id="loader-wrapper">
-    <div id="loader"></div>
-</div>
+
+
+    <div class="modal fade" id="modal_1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            One sentense for description
+          </div>
+          <div class="modal-body">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores laudantium itaque cumque maxime obcaecati, reprehenderit ea dignissimos amet voluptatem id excepturi, facilis totam veritatis, maiores eveniet neque explicabo temporibus quisquam.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+  <div id="loader-wrapper">
+      <div id="loader"></div>
+  </div>
 
 
     <!-- Navigation -->
@@ -234,13 +254,13 @@
                      </div>
                      <div class="col-md-3">
                         <div class="tile">
-                        <img src="dev-assets/images/tiles/tile-2.jpg" alt="tile" >
+                        <img data-toggle="modal" data-target="#modal_1" src="dev-assets/images/tiles/tile-2.jpg" alt="tile" >
                         <div rel="rollover">One sentence details for each pictues</div>
                         </div>                     
                      </div>
                      <div class="col-md-3">
                         <div class="tile">
-                        <img src="dev-assets/images/tiles/tile-3.jpg" alt="tile" >
+                        <img  data-toggle="modal" data-target="#modal_1" src="dev-assets/images/tiles/tile-3.jpg" alt="tile" >
                         <div rel="rollover">One sentence details for each pictues</div>
                         </div>                     
                      </div>
@@ -248,13 +268,13 @@
                 <div class="row">
                      <div class="col-md-9">
                         <div class="tile">
-                        <img src="dev-assets/images/tiles/tile-5.jpg" alt="tile" >
+                        <img   data-toggle="modal" data-target="#modal_1" src="dev-assets/images/tiles/tile-5.jpg" alt="tile" >
                         <div rel="rollover">One sentence details for each pictues</div>
                         </div>                     
                      </div>
                      <div class="col-md-3">
                         <div class="tile ">
-                        <img src="dev-assets/images/tiles/tile-6.jpg" alt="tile" >
+                        <img   data-toggle="modal" data-target="#modal_1" src="dev-assets/images/tiles/tile-6.jpg" alt="tile" >
                         <div rel="rollover">One sentence details for each pictues</div>
                         </div>                     
                      </div>
@@ -262,7 +282,7 @@
             </div>
             <div class="col-md-3">
                 <div class="tile last-tile">
-                    <img src="dev-assets/images/tiles/tile-4.jpg" alt="tile" class="img-responsive">
+                    <img  data-toggle="modal" data-target="#modal_1" src="dev-assets/images/tiles/tile-4.jpg" alt="tile" class="img-responsive">
                     <div rel="rollover">One sentence details for each pictues</div>
                 </div>            
             </div>

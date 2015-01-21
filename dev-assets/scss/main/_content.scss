@@ -1,6 +1,8 @@
 // $products_spotlight begin
 
-.products_spotlight {		
+.products_spotlight {	
+	padding-top:20px;
+	margin-top:0;	
 	.col-xs-8 {
 			padding-right:0;
 			@include bp-medium {
