@@ -53,15 +53,14 @@
 			li {
 				box-shadow: 2px 0px 10px 0px #bdbdbd;
 				-moz-box-shadow:2px 0px 10px 0px #bdbdbd;
-				behavior: url(../dev-assets/css/PIE.htc);
 				font-family: $lobster-font;
 				position: relative;
 				padding:0;
 				@include clearfix;
 				.bicycle-icon {
 					position: absolute;
-					top:10px;
-					left:20px;
+					right:5px;
+					bottom:10px;
 					.bicycle-mobile {
 						display: none;
 					}
@@ -81,6 +80,9 @@
 				}
 				.product_name {
 					@include font-size(24px);
+					text-align: left;
+					float:left;
+					margin-left:5px;
 					@media (max-width:992px) {
 						@include font-size(15px);
 						float:left;
@@ -111,11 +113,12 @@
 		li {
 			box-shadow: 2px 0px 10px 0px #bdbdbd;
 			-moz-box-shadow: 2px 0px 10px 0px #bdbdbd;
-			behavior: url(../dev-assets/css/PIE.htc);
 			padding:0;
 			overflow: hidden;
+			height: 470px;
 			@include clearfix;
-			@media (min-width: 600px) and (max-width:992px) { height:250px; }
+			@media (min-width: 992px) and (max-width:1679px) { height:340px; }
+			@media (min-width: 600px) and (max-width:992px)  { height:250px; }
 			@media (max-width: 400px) {
 				height: 180px;
 				margin-bottom: 20px;
@@ -131,6 +134,9 @@
 				@media (min-width: 601px) and (max-width:800px) {
 					height:170px;
 				}
+			}
+			.product_spotlight_image {
+				overflow: hidden;
 			}
 			.description {
 				text-align: left;

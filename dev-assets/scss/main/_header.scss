@@ -46,6 +46,7 @@ nav.navbar-default {
 				margin-top: -5px;
 				margin-right:5px;
 			}
+			span { margin-left:5px;}
 			&:hover { border-bottom: 9px solid #d8d2cb; }
 		}
 		.last-list-item,ul.dropdown-menu li {
@@ -59,7 +60,7 @@ nav.navbar-default {
 		}
 		li.current  		{ border-bottom: 9px solid #ff4438;}
 		li.active 			{ background: none;}
-		li.dropdown.open a  {background: none;}
+		li.dropdown.open a  { background: none;}
 		ul.languages {
 			position: relative;
 			top:10px;
@@ -68,7 +69,7 @@ nav.navbar-default {
 				list-style: none;
 				background: none;
 				padding-bottom: 0;
-
+				font-family: sans-serif;
 				a {
 					@include font-size(14px); 
 					padding-left:0;
@@ -129,6 +130,10 @@ section.intro-section {
 		li {
 			background: #424242;
 			border:0;
+			@include border-radius(20px);
+			//IE 8 fix
+			behavior: url(../dev-assets/css/PIE.htc);
+
 		}
 		li.active {
 			background: #fff;
@@ -164,6 +169,7 @@ section.intro-section {
 		top:5%;
 		left:20%;
 		text-align: left;
+		text-shadow:none;
 		.tablet-span {
 			font-size: 25px;
 			display: none;

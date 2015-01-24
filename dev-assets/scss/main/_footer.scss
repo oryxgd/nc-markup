@@ -134,6 +134,11 @@ footer {
 			.copyright {
 				text-align: right;
 				padding-top:40px;
+				p {
+					@include bp-medium {
+						@include font-size(12px);
+					}
+				}
 			}
 		}
 	}
