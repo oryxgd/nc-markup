@@ -6,8 +6,8 @@ footer {
    -webkit-box-shadow: inset 2px 8px 20px #bdbdbd;
    box-shadow:         inset 2px 8px 20px #bdbdbd;
 	color:#9f9086;
-	padding-top:20px;
-	padding-bottom: 20px;
+	padding-top:25px;
+	padding-bottom: 25px;
 
 	ul {
 		padding-left:0;
@@ -22,7 +22,9 @@ footer {
 				color:#9f9086;
 			}
 		}
-	}
+
+	}		
+	.col-xs-3 li:last-child { margin-bottom: 0;}
 	.social-list {
 		li:first-child {
 			padding-left:0;

@@ -1,7 +1,7 @@
 // $products_spotlight begin
 
 .products_spotlight {	
-	padding-top:20px;
+	padding-top:15px;
 	margin-top:0;	
 	.col-xs-8 {
 			padding-right:0;
@@ -16,28 +16,33 @@
 		}
 	//tagline
 	.spotlight_tagline {
+			@include ghostVerticalAlign;
+			@media (min-width: 1680px) {
+				height: 300px;
+				display: table;
+			}
+ 
 		h1 {
-			@include font-size(70px);
+			@include font-size(60px);
 			color:#8d827a;
 			text-align: left;
 			font-weight: 300;
-			line-height: 60px;
+			@media (min-width: 1680px)  {
+				display: table-cell;
+				vertical-align: middle;
+			}
 			@media (max-width:992px) {
-				@include font-size(40px);
+				@include font-size(30px);
 			}
 			@include bp-small {
 				@include font-size(20px);
 			}
-			@media (min-width: 1650px) {
-				@include font-size(90px);
-				line-height: 120px;
-			}
+		
 		}
 	}
 	//top products
 	.spotlight_products {
 		margin-top:0;
-		padding-top: 20px;
 		@media (max-width:992px) {
 			.col-xs-3 {padding:5px;}
 		}
@@ -75,7 +80,7 @@
 					}
 				}
 				.product_name {
-					@include font-size(36px);
+					@include font-size(24px);
 					@media (max-width:992px) {
 						@include font-size(15px);
 						float:left;
@@ -102,7 +107,6 @@
 //new products
 .new_products_spotlight {
 	padding-top:20px;
-	.col-xs-6,.col-xs-3 { padding:10px;}
 	ul {
 		li {
 			box-shadow: 2px 0px 10px 0px #bdbdbd;
@@ -113,7 +117,8 @@
 			@include clearfix;
 			@media (min-width: 600px) and (max-width:992px) { height:250px; }
 			@media (max-width: 400px) {
-				height: 220px;
+				height: 180px;
+				margin-bottom: 20px;
 			}
 			img {
 				width:100%;
@@ -129,12 +134,13 @@
 			}
 			.description {
 				text-align: left;
-				padding:20px;
+				margin-left:10px;
 				@media (max-width:992px) {
 					padding:5px;
 				}
 				h3 {
 					color:#8d827a;
+					margin-top:10px;
 					@include font-size(24px);
 					@media (max-width:992px) {
 						@include font-size(14px);
