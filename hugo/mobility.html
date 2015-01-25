@@ -2,28 +2,22 @@
 <html class="no-js">
   <head>
     <meta charset="utf-8">
-    <title>Mobility</title>
+    <title>Mobility Page</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="shortcut icon" href="dev-assets/images/favicon.ico">
 
     <!-- build:css(.tmp) styles/main.css -->
     <link rel="stylesheet" href="dev-assets/css/style.css">
     <link rel="stylesheet" href="dev-assets/css/bootstrap.css">
-    
-
-    <!--fonts -->
-    <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Quicksand:300,400,700' rel='stylesheet' type='text/css'>
-    <!--fonts -->
-
+  
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <script src="scripts/libs/html5shiv.min.js"></script>
+        <script src="scripts/libs/respond.min.js"></script>
     <![endif]-->
     <!-- endbuild -->
   </head>
@@ -146,7 +140,7 @@
                 <h2>Flowing Fast</h2>
                 <img src="dev-assets/images/products/people-1.jpg" alt="product name">
                 <div class="add_to_cart">
-                    <a href="#add-to-cart-section" class="btn btn-default"><span><img src="dev-assets/images/icon-cart.png" alt="cart"></span>Add to cart</a>
+                    <a href="#add-to-cart-section" class="btn btn-default send_to_cart"><span><img src="dev-assets/images/icon-cart.png" alt="cart"></span>Add to cart</a>
                 </div>
             </div>
         </div>
@@ -454,9 +448,9 @@
 
                     <div class="quantity">
                         <h3>Quantity:
-                            <a href="#"><img src="dev-assets/images/plus.png"></a>
+                            <a href="#"><img src="dev-assets/images/plus.png" alt="icons"></a>
                             <input type="text" placeholder="01">
-                            <a href="#"><img src="dev-assets/images/minus.png"></a>
+                            <a href="#"><img src="dev-assets/images/minus.png" alt="icons"></a>
                         </h3>
                     </div>
 
@@ -531,8 +525,11 @@
     </footer>
 
     <!--  JavaScript -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    <script src="scripts/libs/jquery-1.11.2.min.js"></script>
+    <script src="scripts/libs/bootstrap.min.js"></script>
+    <!--[if lte IE ]>       
+        <script src="scripts/libs/ie-bootstrap-carousel.min.js"></script>
+    <![endif]-->
     <script src="scripts/main.js"></script>
     <script src="scripts/jquery.animate_from_to-1.0.min.js"></script>
     <script src="scripts/jquery.easing.min.js"></script>
@@ -546,8 +543,8 @@
     <!-- Preloader -->
     <script type="text/javascript">
         //<![CDATA[
-            $(window).load(function() { // makes sure the whole site is loaded
-                $('#status').fadeOut(); // will first fade out the loading animation
+            $(window).load(function() { 
+                $('#status').fadeOut();
                 $('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website.
                 $('body').delay(350).css({'overflow':'visible'});
             })
