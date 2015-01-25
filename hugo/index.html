@@ -2,21 +2,26 @@
 <html class="no-js">
   <head>
     <meta charset="utf-8">
-    <title>Hugo Home Page</title>
+    <title>hugo</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
-    <link rel="shortcut icon" href="dev-assets/images/favicon.ico">
+    <link rel="shortcut icon" href="/favicon.ico">
 
     <!-- build:css(.tmp) styles/main.css -->
     <link rel="stylesheet" href="dev-assets/css/style.css">
     <link rel="stylesheet" href="dev-assets/css/bootstrap.css">
     
 
+    <!--fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Quicksand:300,400,700' rel='stylesheet' type='text/css'>
+    <!--fonts -->
+
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
-        <script src="scripts/libs/html5shiv.min.js"></script>
-        <script src="scripts/libs/respond.min.js"></script>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
     <!-- endbuild -->
   </head>
@@ -147,15 +152,15 @@
 
             </div>
           </div>
-              <!-- Controls -->
-            <a class="left carousel-control" href="#carousel-example-generic-main" role="button" data-slide="prev">
-                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-           <a class="right carousel-control" href="#carousel-example-generic-main" role="button" data-slide="next">
+                  <!-- Controls -->
+                <a class="left carousel-control" href="#carousel-example-generic-main" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+              <a class="right carousel-control" href="#carousel-example-generic-main" role="button" data-slide="next">
                 <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
                 <span class="sr-only">Next</span>
-           </a>
+              </a>
 
 
         </div>
@@ -337,10 +342,10 @@
     </footer>
 
     <!--  JavaScript -->
-    <script src="scripts/libs/jquery-1.11.2.min.js"></script>
-    <script src="scripts/libs/bootstrap.min.js"></script>
-    <!--[if lte IE ]>       
-        <script src="scripts/libs/ie-bootstrap-carousel.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    <!--[if lte IE 8]>       
+        <script src="scripts/ie-bootstrap-carousel.min.js"></script>
     <![endif]-->
     <script src="scripts/jquery.easing.min.js"></script>
     <script src="scripts/main.js"></script>
@@ -348,8 +353,8 @@
     <!-- Preloader -->
     <script type="text/javascript">
         //<![CDATA[
-            $(window).load(function() { 
-                $('#status').fadeOut(); 
+            $(window).load(function() { // makes sure the whole site is loaded
+                $('#status').fadeOut(); // will first fade out the loading animation
                 $('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website.
                 $('body').delay(350).css({'overflow':'visible'});
             })

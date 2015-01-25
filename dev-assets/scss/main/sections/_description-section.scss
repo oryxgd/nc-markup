@@ -23,7 +23,7 @@
 			}
 		}
 		h2 {
-			font-family: Quicksand-Light;
+			font-weight: 300;
 			@include font-size(100px);
 			@media (min-width:600px) and (max-width:992px) {
 				@include font-size(40px);
