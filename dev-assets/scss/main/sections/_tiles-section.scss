@@ -27,7 +27,7 @@
 			div[rel="rollover"] {
 				@include font-size(37px);
 				color:#fff;
-				font-weight: 300;
+				font-family: Quicksand-Light;
 				@media (max-width: 600px) {
 					@include font-size(25px);
 				}
@@ -35,7 +35,7 @@
 		}
 		h1 {
 			@include font-size(70px);
-			font-weight: 300;
+			font-family: Quicksand-Light;
 			color:#fff;
 			margin-left:100px;
 			margin-top:150px;

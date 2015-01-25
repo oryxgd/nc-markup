@@ -32,13 +32,13 @@
 		h2 {
 			@include font-size(25px);
 			color:#9ae8dd;
-			font-weight: 700;
+			font-family: Quicksand-Bold;
 			margin-top:0;
 		}
 		h3,p {
 			@include font-size(20px);
 			color:#9ae8dd;
-			font-weight: 300;
+			font-family: Quicksand-Light;
 		}
 
 		p { color:#e8e2dd;}
