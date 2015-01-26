@@ -20,6 +20,8 @@
 			height: auto;
 			@media (max-width: 992px) {
 				width:100%;
+				position: relative;
+				z-index: 100;
 			}
 		}
 		.last-tile img {height: auto;@media (min-width: 1600px) { width:100%;}}
@@ -28,6 +30,10 @@
 				@include font-size(37px);
 				color:#fff;
 				font-family: Quicksand-Light;
+				@include bp-medium {
+					display: none;
+
+				}
 
 			}
 		}
