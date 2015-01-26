@@ -77,6 +77,8 @@ body {
     overflow: hidden;
 }
 
+
+
 /* Preloader */
 
 #preloader {
@@ -92,11 +94,16 @@ body {
 #status {
     width:128px;
     height:128px;
-    position:absolute;
-    left:50%; /* centers the loading animation horizontally one the screen */
-    top:50%; /* centers the loading animation vertically one the screen */
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
     background-image:url("../images/preloader.gif"); /* path to your loading animation */
     background-repeat:no-repeat;
     background-position:center;
-    margin:-100px 0 0 -100px; /* is width and height divided by two */
+    @media (max-width: 400px) {
+        top:30%;
+        left:30%;
+    }
+
 }

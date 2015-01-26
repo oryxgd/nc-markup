@@ -1,4 +1,6 @@
-
+$(document).on( "mobileinit", function() {
+    $.mobile.loader.prototype.options.disabled = true;
+});
 $(document).ready(function() {
 
 	//animation - add to cart
@@ -31,5 +33,16 @@ $(document).ready(function() {
 		    }
 		  });
 		});
+
+		//swipe carousel
+		$(".carousel").swiperight(function() {
+	      $(this).carousel('prev');
+	    });
+	   $(".carousel").swipeleft(function() {
+	      $(this).carousel('next');
+	   });
+
+	
+
 });
 

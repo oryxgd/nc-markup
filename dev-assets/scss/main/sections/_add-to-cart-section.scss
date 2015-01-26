@@ -51,6 +51,9 @@
 			}	
 			span {
 				margin-right:15px;
+				@include bp-small {
+					margin-right: 5px;
+				}
 			}
 		}
 		label {
@@ -106,6 +109,8 @@
 				border-radius: 20px;
 				border: 1px solid #b0a8a2;
 				text-align: center;
+				position: relative;
+				top:4px;
 				behavior: url(../dev-assets/css/PIE.htc);
 			}
 		}

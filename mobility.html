@@ -36,14 +36,7 @@
             <h4 class="modal-title" id="myModalLabel">Find Us on the Map</h4>
           </div>
           <div class="modal-body">
-              <iframe
-                frameborder="0" style="border:0"
-                src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCnbL8dElGXOgOnLCQo1ukdRxK-N7jG7-E
-                  &q=Butchart+Gardens+Victoria+BC
-                  &attribution_source=Google+Maps+Embed+API
-                  &attribution_web_url=http://www.butchartgardens.com/
-                  &attribution_ios_deep_link_id=comgooglemaps://?daddr=Butchart+Gardens+Victoria+BC">
-              </iframe>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta dolorem officia nesciunt suscipit in tempora explicabo magnam autem quasi voluptatibus facere esse, doloremque accusantium vel voluptas. A incidunt libero ipsum.</p>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -246,28 +239,28 @@
                      </div>
                      <div class="col-md-3">
                         <div class="tile">
-                        <img data-toggle="modal" data-target="#modal_1" src="dev-assets/images/tiles/tile-2.jpg" alt="tile" >
-                        <div rel="rollover">One sentence details for each pictues</div>
+                          <img data-toggle="modal" data-target="#modal_1" src="dev-assets/images/tiles/tile-2.jpg" alt="tile" >
+                          <div rel="rollover">One sentence details for each pictues</div>
                         </div>                     
                      </div>
                      <div class="col-md-3">
                         <div class="tile">
-                        <img  data-toggle="modal" data-target="#modal_1" src="dev-assets/images/tiles/tile-3.jpg" alt="tile" >
-                        <div rel="rollover">One sentence details for each pictues</div>
+                          <img data-toggle="modal" data-target="#modal_1" src="dev-assets/images/tiles/tile-3.jpg" alt="tile" >
+                          <div rel="rollover">One sentence details for each pictues</div>
                         </div>                     
                      </div>
                 </div>
                 <div class="row">
                      <div class="col-md-9">
                         <div class="tile">
-                        <img   data-toggle="modal" data-target="#modal_1" src="dev-assets/images/tiles/tile-5.jpg" alt="tile" >
-                        <div rel="rollover">One sentence details for each pictues</div>
+                          <img data-toggle="modal" data-target="#modal_1" src="dev-assets/images/tiles/tile-5.jpg" alt="tile" >
+                          <div rel="rollover">One sentence details for each pictues</div>
                         </div>                     
                      </div>
                      <div class="col-md-3">
                         <div class="tile ">
-                        <img   data-toggle="modal" data-target="#modal_1" src="dev-assets/images/tiles/tile-6.jpg" alt="tile" >
-                        <div rel="rollover">One sentence details for each pictues</div>
+                          <img data-toggle="modal" data-target="#modal_1" src="dev-assets/images/tiles/tile-6.jpg" alt="tile" >
+                          <div rel="rollover">One sentence details for each pictues</div>
                         </div>                     
                      </div>
                 </div>
@@ -501,6 +494,11 @@
                       </div>
                     </div>
                 </div>
+                <div class=" col-xs-12 col-md-12 col-lg-3 ">
+                    <div class="copyright">
+                        <p>©2014 NC Natural Cycle,All Rights Reserved</p>
+                    </div> 
+                </div>
             </div>
 
             <div class="footer-mobile">
@@ -517,7 +515,7 @@
                         <li><a href="#">Terms & Conditions</a></li>
                     </ul>  
                     <div class="copyright">
-                        <p>©2014 NC Natural Cycle,<br>All Rights Reserved</p>
+                        <p>©2015 NC Natural Cycle,<br>All Rights Reserved</p>
                     </div> 
                 </div>
             </div>
@@ -526,6 +524,13 @@
 
     <!--  JavaScript -->
     <script src="scripts/libs/jquery-1.11.2.min.js"></script>
+    <script>
+    $(document).on("mobileinit", function(){
+        $.mobile.ajaxEnabled=false;
+        $.mobile.loadingMessage = false;
+    });            
+    </script>
+     <script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script> 
     <script src="scripts/libs/bootstrap.min.js"></script>
     <!--[if lte IE ]>       
         <script src="scripts/libs/ie-bootstrap-carousel.min.js"></script>

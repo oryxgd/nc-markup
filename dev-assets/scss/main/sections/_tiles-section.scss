@@ -28,9 +28,7 @@
 				@include font-size(37px);
 				color:#fff;
 				font-family: Quicksand-Light;
-				@media (max-width: 600px) {
-					@include font-size(25px);
-				}
+
 			}
 		}
 		h1 {
@@ -59,6 +57,7 @@
 		position: relative;
 		overflow: hidden;
 		cursor: pointer;
+
 	}
 	.jTile-rollover{
 		display: none;

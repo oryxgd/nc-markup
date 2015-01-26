@@ -82,7 +82,7 @@ footer {
 		}
 		.media-body {
 			p {
-				@include font-size(18px);
+				@include font-size(16px);
 				@include bp-medium {
 					@include font-size(12px);
 				}
@@ -104,7 +104,7 @@ footer {
 		.list-inline {
 			border-bottom: 2px solid #b6ada5;
 			text-align: center;
-			li img { width:30px;}
+			li img { width:20px;}
 			li {
 				height: 40px;
 				vertical-align: bottom;
@@ -133,7 +133,7 @@ footer {
 			}
 			.copyright {
 				text-align: right;
-				padding-top:40px;
+				padding-top:30px;
 				p {
 					@include bp-medium {
 						@include font-size(12px);
@@ -143,6 +143,10 @@ footer {
 		}
 	}
 	.footer-desktop {
+		.copyright {
+			text-align: right;
+			padding-top: 75px;
+		}
 		@include bp-small {
 			display: none;
 		}
