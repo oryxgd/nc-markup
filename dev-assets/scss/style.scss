@@ -13,6 +13,9 @@
 @import "main/sections/features-section";
 @import "main/sections/tiles-section";
 @import "main/sections/add-to-cart-section";
+@import "main/sections/policy-section";
+@import "main/sections/comingsoon-section";
+@import "main/sections/login-section";
 
 //footer
 @import "main/footer";
@@ -48,6 +51,9 @@ html {
 }
 //modal
 
+a,button,.navbar-right li {
+    @include transition(all, 0.2s, ease-in-out);
+}
 
 
 @media (min-width: 1680px) {

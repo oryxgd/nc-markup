@@ -115,10 +115,21 @@
 
 //new products
 .new_products_spotlight {
-	padding-top:20px;
 	.container{
 		@include bp-small {
 			padding: 0;
+		}
+	}
+	h2 {
+		text-align: left;
+		margin-top:0;
+		margin-left:15px;
+		color:#8d827a;
+		font-family: Quicksand-Light;
+		@include font-size(50px);
+		margin-bottom: 20px;
+		@include bp-medium {
+			display: none;
 		}
 	}
 	ul {

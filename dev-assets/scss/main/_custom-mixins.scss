@@ -10,9 +10,17 @@ $lobster-font :'Lobster', cursive;
 }
 
 
+
 @mixin font-size($size) {
   font-size: $size;
   font-size: calculateEm($size);
+}
+@mixin transition($transition-property, $transition-time, $method) {
+    -webkit-transition: $transition-property $transition-time $method;
+    -moz-transition: $transition-property $transition-time $method;
+    -ms-transition: $transition-property $transition-time $method;
+    -o-transition: $transition-property $transition-time $method;
+    transition: $transition-property $transition-time $method;
 }
 
 @mixin ghostVerticalAlign(){
@@ -30,6 +38,13 @@ $lobster-font :'Lobster', cursive;
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 }
+@mixin placeholder {
+  ::-webkit-input-placeholder {@content}
+  :-moz-placeholder           {@content}
+  ::-moz-placeholder          {@content}
+  :-ms-input-placeholder      {@content}  
+}
+
 
 @mixin border-radius($radius) {
 	border-radius: $radius;
@@ -57,13 +72,20 @@ $lobster-font :'Lobster', cursive;
   filter: alpha(opacity=$opacity-ie); //IE8
 }
 
-@mixin vertical-align {
-     position: relative;
-	 top: 50%;
-	 -webkit-transform: translateY(-50%);
-	 -ms-transform: translateY(-50%);
-	 transform: translateY(-50%);
- }
+@mixin centerer($horizontal: true, $vertical: true) {
+  position: absolute;
+  @if ($horizontal and $vertical) {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  } @else if ($horizontal) {
+    left: 50%;
+    transform: translate(-50%, 0);
+  } @else if ($vertical) {
+    top: 50%;
+    transform: translate(0, -50);
+  }
+}
 
  //media queries 
 
