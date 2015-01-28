@@ -1,9 +1,10 @@
-
+Live preview of the website
 
 alex-antonov.com/hugo <br>
 alex-antonov.com/hugo/mobility.html
 
+New pages to view: <br>
 
-Tiles section
-
-For mobile devices it works on touch(shows the overlay). In case some devices will not support this, i've added the modal (on click image)
+alex-antonov.com/hugo/comingsoon.html  - Coming soon page <br>
+alex-antonov.com/hugo/login.html - Login page<br>
+alex-antonov.com/hugo/policy.html - Privacy & Policy page
