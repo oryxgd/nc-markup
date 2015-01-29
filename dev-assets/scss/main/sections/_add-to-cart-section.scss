@@ -59,6 +59,7 @@
 		label {
 			@include font-size(25px);
 			cursor: pointer;
+			margin-left:5px;
 			@media (min-width:600px) and (max-width:992px) {
 				@include font-size(16px);
 			}
@@ -67,6 +68,7 @@
 			}
 		}
 		.add_to_cart {
+			margin-left:10px;
 			span {
 				background: none;
 				img {
@@ -81,6 +83,9 @@
 					width:200px;
 				}
 			}
+		}
+		.quantity {
+			margin-left:15px;
 		}
 
 		h3 {

@@ -1,0 +1,28 @@
+//$about section begin
+
+.about-section {
+	margin-top:74px;
+	padding-bottom: 0;
+	text-align: left;
+	height: 100%;
+	.about-logo {
+		-webkit-box-shadow: 0 15px 16px -10px  #bfb9b4;
+        -moz-box-shadow: 0 15px 16px -10px #bfb9b4;
+        box-shadow: 0 15px 16px -10px  #bfb9b4;
+        margin:30px auto 100px;	
+        padding-bottom: 20px;
+
+	}
+	img {
+        margin:0 auto;
+	}
+	h2,h3 {
+		color:#fe2728;
+		@include font-size(40px);
+	}
+	p {
+		color:#9f9086;
+		@include font-size(26px);
+		margin-bottom: 60px;
+	}
+}

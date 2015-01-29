@@ -74,6 +74,7 @@
 				h1 {
 					@include font-size(100px);
 					font-family: Quicksand-Light;
+					text-shadow:none;
 					@media (max-width: 992px) {
 						@include font-size(40px);
 					}
