@@ -4,9 +4,17 @@
 	margin-top:0;
 	padding-bottom: 0;
 }
+.carousel-1 {
+	.carousel-inner {
+		height: 700px;
+		@media (max-width: 992px) {
+			height: auto;
+		}
+	}
+}
 
 .carousel-2 {
-	height:100%;
+
 	background: #00636a;
 	 -moz-box-shadow:    	inset 2px 8px 20px #525252;
     -webkit-box-shadow: 	inset 2px 8px 20px #525252;
@@ -61,6 +69,10 @@
 			}
 		}
 		.carousel-inner {
+			height: 700px;
+			@media (max-width: 992px) {
+				height: auto;
+			}
 			img {
 				margin:20% auto;
 			}

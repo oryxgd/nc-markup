@@ -3,7 +3,7 @@
 .accessory-section {
 	text-align: left;
 	margin-top: 74px;
-	height: 780px;
+	height: 700px;
 	overflow: hidden;
 	@media (max-width: 992px) {
 		height:300px !important;
@@ -53,15 +53,14 @@
 }
 
 section.carousel-3 {
-	height: 100%;
+
 	background: #ed2427;
 	margin-top:0;
-
 	#carousel-example-generic-main {
 		height: 100%;
 		.item {
 			img {
-				padding-top:20%;
+				padding-top:10%;
 			}
 		}
 		.carousel-indicators {
@@ -71,16 +70,20 @@ section.carousel-3 {
 			li:nth-child(3) { background: #f61637;} 
 		}
 		.carousel-caption {
-			top:15%;
-			@include bp-medium {
-				top:5%;
-			}
+			top:5%;
+
 			h1 {
 				color:#fff;
 				span {
 					font-family:$lobster-font;
 				}
 			}	
+		}
+		.carousel-inner {
+				height: 700px; 
+				@media (max-width: 992px) {
+					height: auto;
+				}
 		}
 	}
 }
@@ -107,6 +110,10 @@ section.carousel-3 {
 	}
 }
 section.tiles-accessory {
+	height: 700px;
+	@media (max-width: 992px) {
+		height: auto;
+	}
 	.tile {
 		img {
 			width:100%;

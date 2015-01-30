@@ -2,7 +2,10 @@
 
 .parallax-section {
 	  background: url("../images/intro-image.jpg") 50% 0 repeat fixed; 
-	  height:100%;
+	  height:700px;
+	  @media (max-width: 992px) {
+	  	height: auto;
+	  }
 	  width: 100%; 
 	  max-width: 1920px; 
 	  position: relative; 
@@ -103,7 +106,7 @@
 	.btn-default {
 		@include border-radius(30px);
 		width:100%;
-		@include font-size(30px);
+		@include font-size(25px);
 		color:#7c6f66;
 		position: relative;
 		z-index: 20;
