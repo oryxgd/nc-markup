@@ -6,6 +6,8 @@
 	height:700px;
 	overflow: hidden;
 	text-align: left;
+	position: relative;
+	z-index: 22;
 		div[class*="col-"] {
 			padding:0;
 		}

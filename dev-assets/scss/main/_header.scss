@@ -73,9 +73,13 @@ nav.navbar-default {
 				background: none;
 				padding-bottom: 0;
 				font-family: sans-serif;
+									&:hover {
+						border-bottom: 0;
+					}
 				a {
 					@include font-size(14px); 
 					padding-left:0;
+
 				}
 
 			}
@@ -112,6 +116,7 @@ nav.navbar-default {
 				padding-left:0;
 				li {
 					display: inline;
+
 				}
 			}
 		}

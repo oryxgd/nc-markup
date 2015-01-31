@@ -68,9 +68,10 @@ section {
     text-align: center;
     margin-top:20px;
     padding-bottom:20px;
-        -webkit-box-shadow: 0 28px 26px -26px #82746a;
-        -moz-box-shadow:0 28px 26px -26px #82746a;
-        box-shadow: 0 28px 26px -26px #82746a;
+    -webkit-box-shadow: 0 5px 20px 0px #bfb8b2;
+    -moz-box-shadow:0 5px 20px 0px #bfb8b2;
+    box-shadow: 0 5px 20px 0px #bfb8b2;
+
     @media (max-width: 992px) {
         height: auto !important;
     }

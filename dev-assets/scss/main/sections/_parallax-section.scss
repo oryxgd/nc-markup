@@ -8,9 +8,11 @@
 	  }
 	  width: 100%; 
 	  max-width: 1920px; 
-	  position: relative; 
-	  margin-top:75px;
+	    position: relative;
+	    z-index: 23;
+	  margin:75px auto 0;
 	  text-align: inherit;
+	  padding-bottom: 0;
 
 	  //right side icons
 	  .fixed-icons {
