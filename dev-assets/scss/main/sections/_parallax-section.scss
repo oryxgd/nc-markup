@@ -13,7 +13,9 @@
 	  margin:75px auto 0;
 	  text-align: left;
 	  padding-bottom: 0;
-
+		@include bp-small {
+			padding-bottom: 20px;
+		}
 	  //right side icons
 	  .fixed-icons {
 	  	position: fixed;
