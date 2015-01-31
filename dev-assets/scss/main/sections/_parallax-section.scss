@@ -8,8 +8,8 @@
 	  }
 	  width: 100%; 
 	  max-width: 1920px; 
-	    position: relative;
-	    z-index: 23;
+      position: relative;
+      z-index: 23;
 	  margin:75px auto 0;
 	  text-align: inherit;
 	  padding-bottom: 0;
@@ -36,7 +36,7 @@
 	  			}
 	  		}
 	  	}
-	  	ul:last-child {
+	  	ul:first-child {
 	  		cursor: pointer;
 	  		a {
 	  			&:hover,&:active,&:focus {
