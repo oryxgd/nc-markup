@@ -1,3 +1,13 @@
+//new products spotlight auto height
+var height = 0;
+$('.new_products_spotlight ul li').each(function() {
+    height = Math.max( height, $(this).height());
+}).each(function() {
+    $(this).height(height);
+});
+//new products spotlight auto height
+
+
 $(document).on( "mobileinit", function() {
     $.mobile.loader.prototype.options.disabled = true;
 });
@@ -42,7 +52,7 @@ $(document).ready(function() {
 	      $(this).carousel('next');
 	   });
 
-	
+
 
 });
 

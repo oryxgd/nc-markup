@@ -135,21 +135,13 @@
 	}
 	ul {
 		li {
-			// box-shadow: 2px 0px 10px 0px #bdbdbd;
-			// -moz-box-shadow: 2px 0px 10px 0px #bdbdbd;
 			padding:0;
 			behavior: url(../dev-assets/css/PIE.htc);
-			box-shadow:
-				  #bdbdbd
-				  2px 0px 10px 0px;
+			box-shadow:#bdbdbd 2px 0px 10px 0px;
 			overflow: hidden;
 			background: #fff;
-			height: 470px;
 			@include clearfix;
-			@media (min-width: 992px) and (max-width:1679px) { height:340px; }
-			@media (min-width: 401px) and (max-width:992px)  { height:300px; margin-bottom: 20px; }
-			@media (max-width: 401px) {
-				height: 210px;
+			@include bp-medium {
 				margin-bottom: 20px;
 			}
 			img {
@@ -187,6 +179,7 @@
 				h3 {
 					color:#8d827a;
 					margin-top:10px;
+					margin-bottom: 0;
 					@include font-size(24px);
 					@media (max-width:992px) {
 						@include font-size(14px);
