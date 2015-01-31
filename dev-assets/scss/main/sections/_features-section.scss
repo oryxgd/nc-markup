@@ -9,9 +9,7 @@
 	@media (min-width:600px) and (max-width:992px) {
 		padding-bottom: 40px;
 	}
-	@media (min-width: 1600px) {
-		height: 100%;	
-	}
+
 
 	.row-shadow {
 		-webkit-box-shadow: 0 28px 26px -26px #82746a;
@@ -52,6 +50,17 @@
 		@media (min-width:600px) and (max-width:992px) {
 			padding-left:20px;
 		}
+		.media-list {
+
+			.media-left {
+				float:left;
+				margin-right: 30px;
+			}
+			.media-body {
+				position: relative;
+				bottom:4px;
+			}
+		}
 		h4 {
 			color:#9ae8dd;
 			@include font-size(25px);
@@ -65,11 +74,7 @@
 			padding-left: 0;
 			li {
 				list-style: none;
-				padding-left:60px;
 				margin-bottom: 20px;
-				@include bp-small {
-					height:60px;
-				}
 				@include font-size(18px);
 				color:#fff;
 				@media (min-width:600px) and (max-width:992px) {
@@ -86,60 +91,17 @@
 			}
 		}
 		.general {
-			ul {
 
-				li.weight {
-					background: url('../images/sprites/general-icons-sprite.png')no-repeat;
-					background-position: 0 0px;
-				}
-				li.sizes {
-					background: url('../images/sprites/general-icons-sprite.png')no-repeat;
-					background-position: 0 -75px;
-				}
-				li.materials {
-					background: url('../images/sprites/general-icons-sprite.png')no-repeat;
-					background-position: 0 -145px;
-				}
-			}
 		}//general
 
 		.parts {
-			ul {
-				li.frame {
-					background: url('../images/sprites/parts-icons-sprite.png')no-repeat;
-					background-position: 0 0px;
-				}
-				li.chainWheel {
-					background: url('../images/sprites/parts-icons-sprite.png')no-repeat;
-					background-position: 0 -62px;
-				}
-				li.pedals {
-					background: url('../images/sprites/parts-icons-sprite.png')no-repeat;
-					background-position: 0 -125px;
-				}
-				li.wheels {
-					background: url('../images/sprites/parts-icons-sprite.png')no-repeat;
-					background-position: 0 -187px;
-				}
-				li.frame-1 {
-					background: url('../images/sprites/parts-icons-sprite.png')no-repeat;
-					background-position: 0 -252px;
-				}
-				li.stem {
-					background: url('../images/sprites/parts-icons-sprite.png')no-repeat;
-					background-position: 0 -315px;
-				}
-			}
+
 		}//parts
 
 		.box  {
 			ul {
-				li {
-					padding-left:80px;
-				}
-				li.hugo-bicycle {
-					background: url('../images/sprites/box-icons-sprite.png')no-repeat;
-					background-position: 0 0px;
+				li:last-child {
+					margin-left:85px;
 				}
 			}
 		}
