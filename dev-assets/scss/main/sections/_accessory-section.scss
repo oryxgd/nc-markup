@@ -3,8 +3,9 @@
 .accessory-section {
 	text-align: left;
 	margin-top: 74px;
-	height: 700px;
 	overflow: hidden;
+	padding-bottom: 0;
+	position: relative;
 	@media (max-width: 992px) {
 		height:300px !important;
 	}
@@ -71,7 +72,7 @@ section.carousel-3 {
 		}
 		.carousel-caption {
 			top:5%;
-
+			left:0;
 			h1 {
 				color:#fff;
 				span {

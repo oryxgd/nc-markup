@@ -2,7 +2,6 @@
 
 .parallax-section {
 	  background: url("../images/intro-image.jpg") 50% 0 repeat fixed; 
-	  height:700px;
 	  @media (max-width: 992px) {
 	  	height: auto;
 	  }
@@ -55,11 +54,7 @@
 	  	}
 	  }
 	  .product {
-	  	@media (min-width: 600px) and (max-width: 992px) {
-	  		padding-left:60px;
-	  	}
 	  	@media (max-width: 600px) {
-	  		padding-left:20px;
 	  		img {
 	  			width:60%;
 	  		}

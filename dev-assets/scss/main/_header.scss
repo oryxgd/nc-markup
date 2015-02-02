@@ -183,6 +183,7 @@ section.intro-section {
 		background: url('../images/swapper_arrow_right.png')no-repeat 100% 0;
 		top:45%;
 		right:6%;
+		filter:none;
 		@media (max-width:992px) {
 			background: none;
 		}

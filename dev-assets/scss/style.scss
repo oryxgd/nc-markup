@@ -35,6 +35,12 @@ html {
 .row {
     margin:0 !important;
 }
+
+//sections 
+.fixed-height-section {
+    height: 700px;
+}
+
 //modal styles
 .modal-open {
     overflow: auto !important;

@@ -3,8 +3,15 @@
 .comingsoon-section {
 	margin-top:74px;
 	background: url('../images/slider-image.jpg')no-repeat center center;
+	  -webkit-background-size: cover;
+	  -moz-background-size: cover;
+	  -o-background-size: cover;
+	  background-size: cover;
 	text-align: left;
 	padding-bottom: 0;
+	@media (min-width: 1250px) {
+		height: 100%;
+	}
 	.comingsoon-info {
 		background: rgba(248,248,245,0.8);
 		filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#f8f8f5', endColorstr='#f8f8f5'); /* IE */ 
@@ -13,7 +20,7 @@
 		padding-left:7%;
 		padding-right: 7%;
 		padding-top:2%;
-		padding-bottom: 50px;
+
 		@include bp-medium {
 			width:100%;
 		}
