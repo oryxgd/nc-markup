@@ -32,6 +32,9 @@
 			//IE 8 fix
 			behavior: url(../dev-assets/css/PIE.htc);
 			li,li.active {border:0; behavior: url(../dev-assets/css/PIE.htc);}
+			li.active {
+				box-shadow: 0px 0px 3px 1px #413F3F;
+			}
 			li:first-child  { background: transparent; border:1px solid #339ba6;}
 			li:nth-child(2) { background: #f8a11f;} 
 			li:nth-child(3) { background: #f61637;} 

@@ -1,7 +1,17 @@
+// @font-face {
+//     font-family: Lobster;
+//     src: url("../fonts/Lobster.otf"); 
+//    }
+
 @font-face {
-    font-family: Lobster;
-    src: url("../fonts/Lobster.otf"); 
-   }
+    font-family:'Lobster';
+    src: url('../fonts/Lobster.eot');
+    src: url('../fonts/Lobster.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Lobster.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+
+}
 @font-face {
     font-family: NotoSansHans-Black; 
     src: url("../fonts/NotoSansHans-Black.otf");
