@@ -1,0 +1,312 @@
+<!doctype html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <title>Cart</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <link rel="shortcut icon" href="dev-assets/images/favicon.ico">
+
+    <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="dev-assets/css/style.css">
+    <link rel="stylesheet" href="dev-assets/css/bootstrap.css">
+    
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="scripts/libs/html5shiv.min.js"></script>
+        <script src="scripts/libs/respond.min.js"></script>
+    <![endif]-->
+    <!-- endbuild -->
+
+
+  </head>
+
+<body>
+<!-- Preloader -->
+<div id="preloader">
+    <div id="status">&nbsp;</div>
+</div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title" id="myModalLabel">Find Us on the Map</h4>
+          </div>
+          <div class="modal-body">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis tempora sunt quibusdam, veniam vitae placeat dolorem, magnam delectus, officia dignissimos aut enim dolore provident sequi consequuntur sit inventore ad. Totam.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /.modal -->
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="col-md-12">
+            
+                <div class="navbar-header page-scroll">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+
+                    </button>
+                    <a class="navbar-brand page-scroll" href="#page-top"><img src="dev-assets/images/logo.jpg" alt="logo" class="img-responsive"></a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse navbar-ex1-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                        <li>
+                            <a class="page-scroll" href="#page-top">HOME</a>
+                        </li>
+                        <li class="current">
+                            <a class="page-scroll" href="#page-top"><img src="dev-assets/images/world-icon.png">WORLD</a>
+                        </li>
+                        <li class="dropdown">
+                          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">PRODUCTS<span><img src="dev-assets/images/dropdown-icon.png" alt="icon"></span></a>
+                          <ul class="dropdown-menu" role="menu">
+                            <li><a href="mobility.html#tiles">MOBILITY</a></li>
+                            <li><a href="accessory.html#tiles">ACCESSORIES</a></li>
+                          </ul>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="#services"><img src="dev-assets/images/icon-cart.png" alt="icon">CART</a>
+                        </li>
+                        <li class="last-list-item">
+                            <ul class="languages">
+                                <li><a href="#">FR</a></li>
+                                <li><a href="#">中国</a></li>
+                                <li class="active"><a href="#">ENG</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container -->
+        </div>
+    </nav>
+
+    <div class="cart">
+        <div class="container">
+            <div class="row">
+                
+                <div class="col-md-offset-2 col-md-5">
+                    <div class="order-column">
+
+                        <div class="cart-item">
+                            <header>
+                                <h2><img src="dev-assets/images/icon-cart.png" alt="cart">CART: 1 Item</h2>
+                            </header>
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <img src="dev-assets/images/cart_image.jpg" alt="cart image" class="img-responsive">
+                                        </td>
+                                        <td>
+                                            <p><strong>Hugo</strong></p>
+                                            <p>Mustard / Size L</p>
+                                        </td>
+                                        <td>
+                                            <div class="quantity">
+                                                <a href="#"><img src="dev-assets/images/plus.png" alt="icons"></a>
+                                                <input type="text" placeholder="01">
+                                                <a href="#"><img src="dev-assets/images/minus.png" alt="icons"></a>
+                                                <div class="remove_link"><a href="#">Remove from cart</a></div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <img src="dev-assets/images/cart_image.jpg" alt="cart image" class="img-responsive">
+                                        </td>
+                                        <td>
+                                            <p><strong>Hugo</strong></p>
+                                            <p>Mustard / Size L</p>
+                                        </td>
+                                        <td>
+                                            <div class="quantity">
+                                                <a href="#"><img src="dev-assets/images/plus.png" alt="icons"></a>
+                                                <input type="text" placeholder="01">
+                                                <a href="#"><img src="dev-assets/images/minus.png" alt="icons"></a>
+                                                <div class="remove_link"><a href="#">Remove from cart</a></div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="contact-info">
+                            <header>
+                                <h2>1.Contact info</h2>
+                            </header>
+                            <div class="main-info">
+                                <div><span>First Name:</span> <input type="text" placeholder="Mr Le General"></div>
+                                <div><span>Surname:</span> <input type="text" placeholder="de Gaulle"></div>
+                                <div><span>Address:</span> <input type="text" placeholder="Pas trop loin pour les"></div>
+                                <div><span></span><input type="text" placeholder="frais de port"></div>
+                                <div><span>City:</span> <input type="text" placeholder="Shanghai"></div>
+                                <div><span>Post Code: </span><input type="text" placeholder="17000"></div>
+                                <div><span>Shipping Country: </span><input type="text" placeholder="France"></div>
+                            </div>
+                            <div class="additional-info">
+                                <div>
+                                    <span>Are your delivery and billing <br>saddress the same?</span>
+                                    <input type="radio" id="pp1" name="pp1"><label>Yes</label>
+                                    <input type="radio" id="pp2" name="pp2"><label>No</label>
+                                </div>
+                                <div>
+                                    <span>Contact Phone:</span>
+                                    <input type="text" placeholder="">
+                                    <p>Your registered number is required to process your order.</p>
+                                </div>
+                                <div>
+                                    <span>E-mail:</span>
+                                    <input type="text" placeholder="Mr Le General">
+                                    <p>This is where we’ll send your order confirmation.</p>
+                                </div>
+                                <div>
+                                    <input type="checkbox">
+                                    <label>Subscribe to Natural Cycle newsletter </label>
+                                </div>
+                                <div>
+                                    <p>By subscribing you accept that your data will be passed on to Natural Cycle for marketing and analysis purposes only, and that Natural Cycle may use your e-mail for means of communication. The data will be shared with authorized Natural Cycle dealers for your convenience but no other third parties. There are no obligations associated herewith and you may at all times unsubscribe the e-mail service.</p>
+                                </div>
+                            </div>
+                                <a href="#" class="payment-link">CONTINUE TO PAYMENT METHOD</a>
+                        </div>
+
+
+                    </div> <!--order-column-->
+                </div>
+
+                <div class="col-md-3">
+                    <div class="sum-column">
+                        <header>
+                            <h2>Summary</h2>
+                        </header>
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <p><strong>1 X Hugo Celadon Size L</strong></p>
+                                            <p>RMB 2950,00</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p><strong>1 X Hugo Celadon Size L</strong></p>
+                                            <p>RMB 2950,00</p>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                                <tfoot>
+                                    <tr>
+                                        <td><p>TOTAL INCLUDING VAT   <span>RMB5900,00</span></p></td>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div> <!--cart-->
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-desktop">
+                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                    <ul>
+                        <li><a href="#">About NC Natural Cycle</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                    </ul>                
+                </div>
+                <div class="col-xs-5 col-sm-5 col-md-5 col-lg-3">
+                    <ul>
+                        <li>Explore Our World</li>
+                        <li>
+                            <ul class="social-list list-inline">
+                                <li><a href="#" class="social-1"></a></li>
+                                <li><a href="#" class="social-2"></a></li>
+                                <li><a href="#" class="social-3"></a></li>
+                                <li><a href="#" class="social-4"></a></li>
+                                <li><a href="#" class="social-5"></a></li>
+                            </ul>
+                        </li> 
+                    </ul>
+                </div>
+
+                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-3">
+                    <div class="media">
+                      <a class="media-left" href="#"  data-toggle="modal" data-target="#myModal">
+                        <img src="dev-assets/images/map-icon.png" alt="map">
+                      </a>
+                      <div class="media-body">
+                        <h4 class="media-heading">Shop Near By</h4>
+                        <p>Find a shop or a reseller near by your home.</p>
+                        <a href="#"  data-toggle="modal" data-target="#myModal">Start Searching</a>
+                      </div>
+                    </div>
+                </div>
+                <div class=" col-xs-12 col-md-12 col-lg-3 ">
+                    <div class="copyright">
+                        <p>©2014 NC Natural Cycle,All Rights Reserved</p>
+                    </div> 
+                </div>
+            </div>
+
+            <div class="footer-mobile">
+                <ul class="list-inline">
+                    <li><img src="dev-assets/images/world-icon.png" alt="icon"><a href="#">WORLD</a></li>
+                    <li><img src="dev-assets/images/map-icon.png" alt="icon"><a href="#" data-toggle="modal" data-target="#myModal">SHOP NEAR BY</a></li>
+                    <li><img src="dev-assets/images/icon-cart.png" alt="icon"><a href="#">CART</a></li>
+                </ul>
+
+                <div class="footer-bottom-mobile">
+                    <ul>
+                        <li><a href="#">About NC Natural Cycle</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                    </ul>  
+                    <div class="copyright">
+                        <p>©2015 NC Natural Cycle,<br>All Rights Reserved</p>
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!--  JavaScript -->
+    <script src="scripts/libs/jquery-1.11.2.min.js"></script>
+
+    <script src="scripts/libs/bootstrap.min.js"></script>
+    <!--[if IE]>      
+        <script src="scripts/libs/ie-bootstrap-carousel.min.js"></script>
+    <![endif]-->
+    <script src="scripts/jquery.easing.min.js"></script>
+    <script src="scripts/jquery.touchSwipe.min.js"></script>
+    <script src="scripts/main.js"></script>
+    <!-- Preloader -->
+
+    <script type="text/javascript">
+        //<![CDATA[
+            $(window).load(function() { 
+                $('#status').fadeOut(); 
+                $('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website.
+                $('body').delay(350).css({'overflow':'visible'});
+            })
+        //]]>
+    </script>
+</body>
+</html>

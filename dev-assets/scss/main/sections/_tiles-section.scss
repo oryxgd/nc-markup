@@ -5,6 +5,7 @@
 .tiles-section {
 	overflow: hidden;
 	text-align: left;
+	background: #afa198;
 	position: relative;
 	z-index: 22;
 		div[class*="col-"] {
@@ -14,7 +15,6 @@
 		.row { margin-right:0;}
 
 		.hugo-details {
-			background: #afa198;
 			img:first-child,img:nth-child(2) {
 				height: 350px;
 			}

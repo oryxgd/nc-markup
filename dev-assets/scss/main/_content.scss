@@ -139,7 +139,7 @@
 			padding:0;
 			behavior: url(../dev-assets/css/PIE.htc);
 			box-shadow:#bdbdbd 2px 0px 10px 0px;
-
+			display: inline-table;
 			background: #fff;
 			@include clearfix;
 			@include bp-medium {
