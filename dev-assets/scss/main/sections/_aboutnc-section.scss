@@ -4,16 +4,28 @@
 	margin-top:74px;
 	padding-bottom: 0;
 	text-align: left;
-	padding-bottom: 50px;
+	padding-bottom: 0px;
+	background: url('../images/about-bg.jpg')no-repeat center center;
+	background-size: cover;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
 	.about-logo {
 		-webkit-box-shadow: 0 15px 16px -10px  #bfb9b4;
         -moz-box-shadow: 0 15px 16px -10px #bfb9b4;
         box-shadow: 0 15px 16px -10px  #bfb9b4;
         behavior: url(../dev-assets/css/PIE.htc);
-        background: #fff;
-        margin:30px auto 100px;	
+        background: transparent;
+        width:70%;
+        margin:30px auto 70px;	
         padding-bottom: 20px;
 
+	}
+	.about-text {
+		width:60%;
+		margin:0 auto 80px;
+		@include bp-small {
+			width:100%;
+		}
 	}
 	img {
         margin:0 auto;
@@ -25,6 +37,6 @@
 	p {
 		color:#9f9086;
 		@include font-size(26px);
-		margin-bottom: 60px;
+		margin-bottom: 40px;
 	}
 }
