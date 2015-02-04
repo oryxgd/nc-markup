@@ -1,6 +1,15 @@
 
 $(document).ready(function() {
-
+	$(window).load(function(){
+		$( ".new_product_page" ).each(function() {
+	        var newHeight = 0, $this = $( this );
+	        $.each( $this.children(), function() {
+	            newHeight += $( this ).height();
+	        });
+	        $this.height( newHeight );
+	    });
+		
+	});
 	//animation - add to cart
 	$(".add-to-cart").click(function(){
 		$(".product-image img").animate_from_to(".shopping-cart");
@@ -44,5 +53,7 @@ $(document).ready(function() {
 		    }
 		  });
 		});
+
+
 });
 

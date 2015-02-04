@@ -149,35 +149,78 @@
                                 <h2>1.Contact info</h2>
                             </header>
                             <div class="main-info">
-                                <div><span>First Name:</span> <input type="text" placeholder="Mr Le General"></div>
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>First Name:</td>
+                                        <td><input type="text" placeholder="Mr Le General"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Surname:</td>
+                                        <td><input type="text" placeholder="de Gaulle"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Address:</td>
+                                        <td><input type="text" placeholder="Pas trop loin pour les"></td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="1"></td>
+                                        <td><input type="text" placeholder="frais de port"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>City:</td>
+                                        <td><input type="text" placeholder="Shanghai"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Post Code:</td>
+                                        <td><input type="text" placeholder="17000"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Shipping Country:</td>
+                                        <td><input type="text" placeholder="France"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+<!--                                 <div><span>First Name:</span> <input type="text" placeholder="Mr Le General"></div>
                                 <div><span>Surname:</span> <input type="text" placeholder="de Gaulle"></div>
                                 <div><span>Address:</span> <input type="text" placeholder="Pas trop loin pour les"></div>
-                                <div><span></span><input type="text" placeholder="frais de port"></div>
+                                <div><input type="text" placeholder="frais de port"></div>
                                 <div><span>City:</span> <input type="text" placeholder="Shanghai"></div>
                                 <div><span>Post Code: </span><input type="text" placeholder="17000"></div>
-                                <div><span>Shipping Country: </span><input type="text" placeholder="France"></div>
+                                <div><span>Shipping Country: </span><input type="text" placeholder="France"></div> -->
                             </div>
                             <div class="additional-info">
                                 <div>
-                                    <span>Are your delivery and billing <br>saddress the same?</span>
-                                    <input type="radio" id="pp1" name="pp1"><label>Yes</label>
-                                    <input type="radio" id="pp2" name="pp2"><label>No</label>
+                                <ul class="list-inline">
+                                    <li><span>Are your delivery and billing saddress the same?</span></li>
+                                    <li>
+                                        <div class="radio_buttons">
+
+                                            <input type="radio" id="b1" name="b1">
+                                            <label for="b1"><span></span>Yes</label>
+
+                                            <input type="radio" id="b2" name="b2">
+                                            <label for="b2"><span></span>No</label>                
+                                        </div>
+                                    </li>
+                                    
+                                </ul>
                                 </div>
-                                <div>
+                                <div class="inputs">
                                     <span>Contact Phone:</span>
                                     <input type="text" placeholder="">
                                     <p>Your registered number is required to process your order.</p>
                                 </div>
-                                <div>
+                                <div class="inputs">
                                     <span>E-mail:</span>
-                                    <input type="text" placeholder="Mr Le General">
+                                    <input type="email" placeholder="">
                                     <p>This is where we’ll send your order confirmation.</p>
                                 </div>
-                                <div>
+                                <div class="check">
                                     <input type="checkbox">
                                     <label>Subscribe to Natural Cycle newsletter </label>
                                 </div>
-                                <div>
+                                <div class="cart-description">
                                     <p>By subscribing you accept that your data will be passed on to Natural Cycle for marketing and analysis purposes only, and that Natural Cycle may use your e-mail for means of communication. The data will be shared with authorized Natural Cycle dealers for your convenience but no other third parties. There are no obligations associated herewith and you may at all times unsubscribe the e-mail service.</p>
                                 </div>
                             </div>

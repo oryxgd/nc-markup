@@ -4,10 +4,12 @@
 //    }
 
 @font-face {
-    font-family:'Lobster';
-    src: url('../fonts/Lobster.eot');
-    src: url('../fonts/Lobster.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/Lobster.otf') format('opentype');
+    font-family:"Lobster";
+    src: url("../fonts/Lobster.eot");
+    src: url("../fonts/Lobster.eot?#iefix") format('eot'),
+         url('../fonts/Lobster.woff') format('woff'),
+         url('../fonts/Lobster.ttf') format('truetype'),
+         url('../fonts/Lobster.svg#Lobster') format('svg');
     font-weight: normal;
     font-style: normal;
 
