@@ -11,9 +11,11 @@ nav.navbar-default {
 	.navbar-brand { 
 		padding:0; 
 		margin-left:0 !important; 
-		img {
-			position: relative;
-			top:1px;
+		background: #ff4438;
+		position: relative;
+		top:1px;
+		&:hover {
+			background: #e1382d !important;
 		}
 	}
 	.navbar-right > li 	{ border-bottom: 9px solid transparent; }

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="32px" height="32px" viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve">
+<g>
+	<g>
+		<g>
+			<path fill="#AEA299" d="M32,27.137C32,29.823,29.822,32,27.137,32H4.863C2.177,32,0,29.823,0,27.137V4.862
+				C0,2.176,2.177,0,4.863,0h22.274C29.822,0,32,2.176,32,4.862V27.137z"/>
+		</g>
+		<defs>
+			<filter id="Adobe_OpacityMaskFilter" filterUnits="userSpaceOnUse" x="0" y="0" width="32" height="32">
+				
+					<feColorMatrix  type="matrix" values="-1 0 0 0 1  0 -1 0 0 1  0 0 -1 0 1  0 0 0 1 0" color-interpolation-filters="sRGB" result="source"/>
+			</filter>
+		</defs>
+		<mask maskUnits="userSpaceOnUse" x="0" y="0" width="32" height="32" id="SVGID_1_">
+			<g filter="url(#Adobe_OpacityMaskFilter)">
+				
+					<image overflow="visible" width="151" height="150" xlink:href="data:image/jpeg;base64,/9j/4AAQSkZJRgABAgEBLAEsAAD/7AARRHVja3kAAQAEAAAAHgAA/+4AIUFkb2JlAGTAAAAAAQMA
+EAMCAwYAAAJOAAADFgAAA5H/2wCEABALCwsMCxAMDBAXDw0PFxsUEBAUGx8XFxcXFx8eFxoaGhoX
+Hh4jJSclIx4vLzMzLy9AQEBAQEBAQEBAQEBAQEABEQ8PERMRFRISFRQRFBEUGhQWFhQaJhoaHBoa
+JjAjHh4eHiMwKy4nJycuKzU1MDA1NUBAP0BAQEBAQEBAQEBAQP/CABEIAJYAmgMBIgACEQEDEQH/
+xABzAAEBAQEBAQEAAAAAAAAAAAAAAgEHBQgDAQEAAAAAAAAAAAAAAAAAAAAAEAADAQADAAIDAAAA
+AAAAAAAAAREQIDUGQGAwAhIRAAEFAQAAAAAAAAAAAAAAAEACA7N0BRASAQAAAAAAAAAAAAAAAAAA
+AGD/2gAMAwEAAhEDEQAAAOfgAAAAAAAA9DuHD+4Hz+BoFaSrSFiF4QvCcrDAeh3Dh/cD5/BtTY1R
+m7pKhOXhGXJM3Jmbh6HcOH9wPn8FVNm1lDVGKEZcmRckzUk5uHodw4f3A+fwVcWVU0VU0AJqSc3C
+JqSc3D0O4cP7gfP4KuKLqKKqNLSNxImoMmpJzcPQ7hw/uB8/g24oqo0/RGlMGpw2QydwzNw9DuHD
++4Hz+DdnStjS0ikikjcwMDAeh3Dh/cD5/ABrBrBrBrBrAAB6HcOH9wPn8AAAAAAAAHodwD//2gAI
+AQIAAQUA+yf/2gAIAQMAAQUA+yf/2gAIAQEAAQUA+F5/vucIQhCc/P8AfcoQhCEITl5/vuMIQhCE
+IQhOHn++4LIQh/J/JCExjHnn++1CEJEyEyDWMe+f77EIQhZCEJjGMe+f77EIQsQlrQ8Yx75/vsQh
+H6iFxYxjHvn++xCEfqIXFjGMe+f77EIQsQnrY8Yx75/vsQhCFlKUuMYx75/vtQhCZcpco3jHvn++
+4LaUpSl1jHnn++4IpSlKUpSlG8eef77jSlKUpSlLx8/33G/hpeHn+++H5/vvh+f74//aAAgBAgIG
+PwBJ/9oACAEDAgY/AEn/2gAIAQEBBj8ACzLbEiRMy2xIkTMtsSJEzLbEiRMy2xIkTMtsSJEzLbEi
+RMy2xIkTMtsSJEzLbEiRMy2xIkTMtsSJEzLbEiRMy2xIkTMtsSJEzLbEiRMy2xIkTMtsSJEzLbEi
+ef/Z" transform="matrix(0.24 0 0 0.24 -2 -2)">
+				</image>
+			</g>
+		</mask>
+		<g opacity="0.35" mask="url(#SVGID_1_)">
+			<path fill="#5F5A54" d="M32,27.137C32,29.823,29.822,32,27.137,32H4.863C2.177,32,0,29.823,0,27.137V4.862
+				C0,2.176,2.177,0,4.863,0h22.274C29.822,0,32,2.176,32,4.862V27.137z"/>
+		</g>
+	</g>
+	<path fill="#E8E2DD" d="M24.547,18.486l0.518-4.012h-3.973v-2.563c0-1.162,0.322-1.953,1.988-1.953l2.123-0.002V6.369
+		c-0.367-0.049-1.627-0.158-3.096-0.158c-3.063,0-5.159,1.87-5.159,5.305v2.959h-3.465v4.012h3.465v10.295h4.143V18.486H24.547z"/>
+</g>
+</svg>
