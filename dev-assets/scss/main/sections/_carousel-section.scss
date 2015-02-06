@@ -6,6 +6,7 @@
 }
 .carousel-1 {
 	position: relative;
+	z-index: 3;
 	.carousel-inner {
 		height: 700px;
 		@media (max-width: 992px) {
@@ -15,8 +16,9 @@
 }
 
 .carousel-2 {
-
+	z-index: 2;
 	background: #00636a;
+	position: relative;
 
 	.carousel {
 		height:100%;
