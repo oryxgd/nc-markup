@@ -30,13 +30,11 @@
 	img {
         margin:0 auto;
 	}
-	h2,h3 {
+	h3 {
 		color:#fe2728;
-		@include font-size(40px);
 	}
 	p {
 		color:#9f9086;
-		@include font-size(26px);
 		margin-bottom: 40px;
 	}
 }

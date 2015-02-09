@@ -23,17 +23,9 @@
 		}
 	}
 	.product-name {
-		h1 {
-			color:#007984;
-			font-family: $lobster-font;
-			@include font-size(80px);
-			@media (min-width:600px) and (max-width:992px) {
-				@include font-size(40px);
-			}
-		}
+
 		h2 {
-			color:#9ae8dd;
-			@include font-size(26px);
+			color:#007984;
 		}
 	}
 	.product-options {
@@ -87,9 +79,8 @@
 			margin-left:15px;
 		}
 
-		h3 {
+		h5 {
 			color:#7c6f66;
-			@include font-size(25px);
 			padding-bottom: 10px;
 			margin-bottom: 30px;
 			margin-top: 0px;

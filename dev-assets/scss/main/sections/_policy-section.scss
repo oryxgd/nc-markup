@@ -5,22 +5,12 @@
 	text-align: left;
 	color:#7c6f66;
 	padding-bottom: 100px;
-	h1 {
+	h3 {
 		color:#fe2728;
-		font-family: Quicksand-Light;
-		@include font-size(60px);
-		@include bp-medium {
-			@include font-size(30px);
-		}
 	}
-	h2 {
-		font-family: Quicksand-Bold;
-		@include font-size(22px);
+	h5 {
 		margin-top:40px;
 		margin-bottom: 40px;
-	}
-	p {
-		@include font-size(20px);
 	}
 	ul {
 	padding-left: 0;

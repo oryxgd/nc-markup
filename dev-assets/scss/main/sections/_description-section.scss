@@ -16,29 +16,10 @@
 		color:#fff;
 		padding:5%;
 		padding-top:1%;
-		h1 {
-			font-family: $lobster-font;
-			@include font-size(80px);
-			@media (max-width: 600px) {
-				@include font-size(50px);
-			}
-		}
-		h2 {
-			font-family: Quicksand-Light;
-			@include font-size(80px);
-			@media (min-width:600px) and (max-width:992px) {
-				@include font-size(40px);
-			}
-			@media (max-width: 600px) {
-				@include font-size(20px);
-			}
-		}
-		p {
-			@include font-size(22px);
+
+
+		h7 {
 			color:#ff6851;
-			@media (max-width: 600px) {
-				@include font-size(13px);
-			}
 		}
 	}
 }

@@ -72,6 +72,85 @@ html {
 }
 //modal
 
+
+
+//typography 
+
+body h1 {
+    font-family: Quicksand-Light;
+    @include font-size(80px);
+    @include bp-small {
+        @include font-size(30px);
+        line-height: 20px;
+    }
+    @media (min-width: 600px) and (max-width:992px) {
+        @include font-size(60px);
+        line-height: 60px;
+    }
+}
+
+body h2 {
+    font-family: $lobster-font;
+    @include font-size(90px);
+    @media (min-width: 600px) and (max-width:992px) {
+        @include font-size(60px);
+    }
+    @include bp-small {
+        @include font-size(20px);
+    }
+}
+body h3 {
+    font-family: Quicksand-Light;
+    @include font-size(45px);
+    @media (min-width: 600px) and (max-width:992px) {
+        @include font-size(30px);
+    }
+    @include bp-small {
+        @include font-size(30px);
+    }
+}
+body h4 {
+    font-family: Quicksand-Bold;
+    @include font-size(30px);
+    @media (min-width: 600px) and (max-width:992px) {
+        @include font-size(20px);
+    }
+    @include bp-small {
+        @include font-size(20px);
+    }
+}
+body h5 {
+    font-family: Quicksand-Light;
+    @include font-size(30px);
+    @media (min-width: 600px) and (max-width:992px) {
+        @include font-size(20px);
+    }
+    @include bp-small {
+        @include font-size(20px);
+    }
+}
+body h6 {
+    font-family: $lobster-font;
+    @include font-size(24px);
+    @media (min-width: 600px) and (max-width:992px) {
+        @include font-size(16px);
+    }
+    @include bp-small {
+        @include font-size(16px);
+    }
+}
+body h7 {
+    font-family: Quicksand-Light;
+    @include font-size(16px);
+    @media (min-width: 600px) and (max-width:992px) {
+        @include font-size(12px);
+    }
+    @include bp-small {
+        @include font-size(12px);
+    }
+}
+
+
 a,button,.navbar-right li {
     @include transition(all, 0.2s, ease-in-out);
 }

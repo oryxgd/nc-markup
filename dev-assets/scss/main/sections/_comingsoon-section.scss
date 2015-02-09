@@ -25,16 +25,12 @@
 			width:100%;
 		}
 		p {
-			@include font-size(20px);
-			color:#847870;
-		}
-		h2 {
-			@include font-size(30px);
-			font-family: Quicksand-Bold;
 			color:#847870;
 		}
 		h3 {
-			@include font-size(30px);
+			color:#847870;
+		}
+		h5 {
 			color:#ff4438;
 		}
 

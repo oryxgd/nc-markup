@@ -40,7 +40,6 @@ nav.navbar-default {
 			}
 			a {
 				color:#847870;
-				@include font-size(18px); 
 				padding-bottom: 5px;
 				padding-top:31px;
 				padding-left:20px;
@@ -75,13 +74,15 @@ nav.navbar-default {
 				background: none;
 				padding-bottom: 0;
 				font-family: sans-serif;
-									&:hover {
+					&:hover {
 						border-bottom: 0;
 					}
 				a {
-					@include font-size(14px); 
 					padding-left:0;
-
+					color:#847870;
+					h7 {
+						font-family: Quicksand-Regular;
+					}
 				}
 
 			}
@@ -101,8 +102,10 @@ nav.navbar-default {
 				a {
 					padding-left:20px;
 					padding-bottom: 0px;
-					&:hover {
-						color:#ff4438;
+					h7 {
+						&:hover {
+							color:#ff4438;
+						}
 					}
 				}
 			}
@@ -204,43 +207,20 @@ section.intro-section {
 			}
 		}
 		h1 {
-			font-family: Quicksand-Light;
+
 			color:#25282a;
-			@include font-size(70px);
 			margin:0;
 			line-height: 50px;
-			@include bp-small {
-				@include font-size(30px);
-				line-height: 20px;
-			}
-			@media (min-width: 600px) and (max-width:992px) {
-				@include font-size(60px);
-				line-height: 60px;
-			}
+
 		}
 		h2 {
 			font-weight: 700;
 			color:#ff4438;
-			font-family: $lobster-font;
-			@include font-size(86px);
 			margin:0;
-			@media (min-width: 600px) and (max-width:992px) {
-				@include font-size(60px);
-			}
-			@include bp-small {
-				@include font-size(20px);
-			}
-		}
-		h3 {
-			color:#ff4438;
-			@include font-size(30px);
-			@media (min-width: 600px) and (max-width:992px) {
-				@include font-size(20px);
-			}
-			@include bp-small {
-				@include font-size(20px);
-			}
 
+		}
+		h5 {
+			color:#ff4438;
 		}
 	}
 }

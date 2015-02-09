@@ -22,22 +22,14 @@
 				display: table;
 			}
  
-		h1 {
-			@include font-size(60px);
+		h3 {
+
 			color:#8d827a;
 			text-align: left;
-			font-family: Quicksand-Light;
 			@media (min-width: 1680px)  {
 				display: table-cell;
 				vertical-align: middle;
 			}
-			@media (max-width:992px) {
-				@include font-size(30px);
-			}
-			@include bp-small {
-				@include font-size(20px);
-			}
-		
 		}
 	}
 	//top products
@@ -107,13 +99,11 @@
 			padding: 0;
 		}
 	}
-	h2 {
+	h3 {
 		text-align: left;
 		margin-top:0;
 		margin-left:15px;
 		color:#8d827a;
-		font-family: Quicksand-Light;
-		@include font-size(50px);
 		margin-bottom: 20px;
 		@include bp-medium {
 			display: none;
@@ -162,22 +152,16 @@
 				@media (max-width:992px) {
 					padding:5px;
 				}
-				h3 {
+				h5 {
 					color:#8d827a;
 					margin-top:10px;
 					margin-bottom: 0;
-					@include font-size(24px);
 					@media (max-width:992px) {
-						@include font-size(14px);
 						margin-top:0;
 					}
 				}
-				p {
+				h7 {
 					color:#8d827a;
-					@include font-size(17px);
-					@media (max-width:992px) {
-						@include font-size(10px);
-					}
 				}
 			}
 		}
