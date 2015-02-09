@@ -65,7 +65,7 @@
 				@media (max-width: 600px) {
 					@include font-size(12px);
 				}
-				h7 {
+				h7,p {
 					margin-bottom: 0;
 					color:#e8e2dd;
 				}

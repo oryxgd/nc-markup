@@ -34,7 +34,6 @@
 			div[rel="rollover"] {
 				@include font-size(37px);
 				color:#fff;
-				font-family: Quicksand-Light;
 				@include bp-medium {
 					display: none;
 
@@ -83,7 +82,7 @@
 	}
 	.jTile-black{
 		color:#000;
-		background: rgba(242,196,76,0.7);
+		background: rgba(242,196,76,0.75);
 		filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#f2c44c', endColorstr='#f2c44c'); /* IE */ 
 	}
 	.jTile-bottom{
