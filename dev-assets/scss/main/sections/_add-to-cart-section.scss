@@ -4,6 +4,8 @@
 .add-to-cart-section {
 	margin-top: 0;
 	text-align: left;
+	position:relative;
+	z-index:-1;
 	@media (min-width: 1600px) {
 		height: 700px;
 	}

@@ -126,7 +126,86 @@ nav.navbar-default {
 			}
 		}
 	}
+	#popoverHiddenContent {
+		display: none;
+		margin-top:120px;
+
+	}
+
 }
+	.popover.bottom {
+		margin-top:30px !important;
+		margin-left:45px;
+		border-radius:0;
+		border:0;
+		padding:0;
+				@include bp-medium {
+			display: none !important;
+		}
+		.arrow {
+			left:20% !important;
+			&:after {
+				border-bottom-color:#978c84 !important;
+			}
+		}
+		.popover-content {
+			padding:0;
+			border-radius:0;
+			header {
+				background:#978c84;
+				color:#fff;
+				padding:10px;
+				padding-right:30px;
+				font-weight: 700;
+				position:relative;
+				a {
+					position:absolute;
+					top:0;
+					right:0;
+					img {
+						width:70%;
+						margin:0 auto;
+					}
+				}
+				p {
+					margin-bottom: 0;
+				}
+			}
+			.popover-body {
+				padding:10px;
+				text-align: center;
+				table {
+					text-align: left;
+					width:100%;
+
+					tr:first-child {
+						border-bottom:1px solid #8d827a;
+					}
+					tr {
+						margin-bottom: 10px;
+						td {
+							color:#847870;
+						}
+						td:last-child {
+							text-align: right;
+						}
+					}
+				}
+				button {
+					background: #ff4438;
+					border:0;
+					color:#fff;
+					width:100%;
+					padding-top:10px;
+					margin-top:20px;
+					padding-bottom: 10px;
+					&:hover {
+						background:#f99e8a;
+					}
+				}
+			}
+		}
+	}
 
 
 //slider
