@@ -39,7 +39,8 @@
 
 body {
     width: 100%;
-    height: 100%;
+    height : auto;
+    background: #d8d2cb !important;
 }
 html {
     width: 100%;
@@ -165,6 +166,7 @@ a,button,.navbar-right li {
 section {
     text-align: center;
     padding-bottom: 20px;
+    background: #fff;
     -webkit-box-shadow:0px 4px 18px 1px #82746A;
     -moz-box-shadow:0px 4px 18px 1px #82746A;
     box-shadow: 0px 4px 18px 1px #82746A;
