@@ -61,6 +61,12 @@ nav.navbar-default {
 				border-bottom: 0;
 			}
 		}
+		li.dropdown {
+			img {
+				width:15px;
+				height:15px;
+			}
+		}
 		li.current  		{ border-bottom: 9px solid #ff4438;}
 		li.active 			{ background: none;}
 		li.dropdown.open a  { background: none;}

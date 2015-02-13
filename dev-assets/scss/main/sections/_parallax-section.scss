@@ -16,11 +16,7 @@
 			padding-bottom: 20px;
 		}
 	  .product {
-	  	@media (max-width: 600px) {
-	  		img {
-	  			width:60%;
-	  		}
-	  	}
+		width:260px;
 	  	h1 {
 	  		color:#6dcacd;
 	  		@include font-size(90px);
@@ -40,12 +36,6 @@
 	  		}
 	  	}
 	  	.add_to_cart {
-	  		@media (min-width: 600px) and (max-width: 992px) {
-	  			width:260px;
-	  		}
-	  		@media (max-width: 600px) {
-	  			width:170px;
-	  		}
 			.btn-default {
 				@media (max-width: 600px) {
 					@include font-size(18px);
@@ -56,17 +46,29 @@
 	  }
 }
 
+	  	.price {
+	  		background:#F2EEEB;
+	  		text-align: center;
+	  		padding-top:10px;
+	  		padding-bottom:10px;
+	  		p {
+	  			margin-bottom: 0;
+	  			color:#609090;
+	  			font-weight: 700;
+	  			@include font-size(18px);
+	  		}
+	  	}
 //add to cart button
 
 .add_to_cart {
-	margin-top:20px;
+	margin-top:10px;
 	width:260px;
+	text-align:center;
 	@media (min-width:600px) and (max-width:992px) {
 		width:200px;
 	}
 	.btn-default {
 		@include border-radius(30px);
-		width:100%;
 		@include font-size(25px);
 		color:#7c6f66;
 		position: relative;
@@ -82,21 +84,27 @@
 			padding:3px;
 			padding-left:6px;
 			padding-right:6px;
-			background: #dcd8d6;
 			@include border-radii(20px,0,0,20px);
 			border-radius: 20px;
 			border-top-right-radius: 0;
 			border-bottom-right-radius: 0;
+			padding-right:0;
 			behavior: url(../dev-assets/css/PIE.htc);
 
 			img {
 				position: relative;
 				bottom: 3px;
+				border-right: 1px solid #dfdad7;
+				padding-right: 10px;
+				padding-left: 5px;
 			}
 		}
 		&:active,&:focus {
 			outline: none;
 		}
+	}
+	h7 {
+		padding:10px;
 	}
 }
 
@@ -106,7 +114,7 @@
 	  	position: fixed;
 	  	right:0;
 	  	bottom:10%;
-	  	z-index: 220;
+	  	z-index: 990;
 	  	a {
 		  	&:hover,&:focus {
 				text-decoration: none;

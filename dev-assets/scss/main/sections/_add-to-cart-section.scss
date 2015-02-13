@@ -4,8 +4,6 @@
 .add-to-cart-section {
 	margin-top: 0;
 	text-align: left;
-	position:relative;
-	z-index:-1;
 	@media (min-width: 1600px) {
 		height: 700px;
 	}
@@ -31,6 +29,9 @@
 		}
 	}
 	.product-options {
+	@media (max-width:600px) {
+		margin-top:20px;
+	}
 		.col-xs-6 {
 			width:100%;
 			@media (max-width: 600px) {
@@ -70,15 +71,18 @@
 					padding-left:5px; 
 				}
 			}
-			.btn-default {
-				@media (max-width: 600px) {
-					@include font-size(16px);
-					width:200px;
-				}
-			}
+
 		}
 		.quantity {
 			margin-left:15px;
+			h5 {
+				margin-bottom: 15px;
+			}
+
+		}
+		.price {
+			width:280px;
+			clear:both;
 		}
 
 		h5 {
@@ -90,6 +94,7 @@
 	   		-moz-box-shadow: 0 8px 6px -6px #ebe7e3;
 	        box-shadow: 0 8px 6px -6px  #ebe7e3;
 	        width:250px;
+	        clear:both;
 	        text-align: center;
 	        @media (min-width:600px) and (max-width:992px) {
 	        	@include font-size(20px);
@@ -100,6 +105,7 @@
 	        @media (max-width: 600px) {
 	        	@include font-size(16px);
 	        	width:140px;
+	        	margin-top:0;
 	        }
 			input[type="text"] {
 				width: 50px;
@@ -115,6 +121,10 @@
 		.select_size {
 			margin-top:20px;
 			margin-bottom:20px;
+			@media (max-width:600px) {
+				margin-top:0;
+				padding-left:25px;
+			}
 			label { color:#c3b6ad; }
 			input[type="radio"] {
 				display: none;

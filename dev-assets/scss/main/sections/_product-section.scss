@@ -111,7 +111,7 @@
 			background: #fff;
 			@include clearfix;
 			margin-bottom: 15px;
-			width:18%;
+			width:23%;
 			@include bp-small {
 				width:100%;
 				margin-bottom: 20px;
@@ -124,6 +124,7 @@
 		     -ms-transition: all 0.2s linear;
 		     transition: all 0.2s linear;
       		cursor: pointer;
+      		width:100%;
 			&:hover {
 				transform: scale(1.05);
 				-ms-transform: scale(1.05,1.05);
@@ -146,7 +147,7 @@
 		}
 	}
 	.w2 { 
-		width:38%;
+		width:48%;
 		@include bp-small {
 			width:100%;
 		}
