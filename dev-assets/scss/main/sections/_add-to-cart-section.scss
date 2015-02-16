@@ -75,13 +75,68 @@
 		}
 		.quantity {
 			margin-left:15px;
+			@include clearfix;
+			input {
+				position:relative;
+				z-index: 2;
+				border:1px solid #DBDBDB;
+			}
+			div {
+				display: inline-table;
+			}
+			.clicker {
+				position:relative;
+				width:130px;
+				input[type="text"] {
+					width: 50px;
+					height: 35px;
+					border-radius: 20px;
+					border: 1px solid #b0a8a2;
+					text-align: center;
+					position: relative;
+					top:4px;
+					behavior: url(../dev-assets/css/PIE.htc);
+				}
+			}
+			a {
+				width: 37px;
+				height: 34px;
+				display: inline-block;
+				position: absolute;
+				vertical-align: middle;
+				font-size:20px;
+				font-weight:700;
+				padding-top:6px;
+				top:5px;
+				&:hover {
+					text-decoration: none;
+				}
+			}
+			a.minus {
+				background: #F2EEEB;
+				border-top-left-radius:20px;
+				border-bottom-left-radius:20px;
+				color:#C1B3A8;
+				left:15px;
+				padding-right:10px;
+			}
+			a.plus {
+				background: #C3B6AD;
+				border-top-right-radius:20px;
+				border-bottom-right-radius:20px;
+				color:#fff;
+				right:15px;
+				padding-left:10px;
+
+			}
 			h5 {
 				margin-bottom: 15px;
+				float:left;
 			}
 
 		}
 		.price {
-			width:280px;
+			max-width:280px;
 			clear:both;
 		}
 
@@ -93,29 +148,21 @@
 			-webkit-box-shadow: 0 8px 6px -6px  #ebe7e3;
 	   		-moz-box-shadow: 0 8px 6px -6px #ebe7e3;
 	        box-shadow: 0 8px 6px -6px  #ebe7e3;
-	        width:250px;
+	        max-width:270px;
+
 	        clear:both;
 	        text-align: center;
 	        @media (min-width:600px) and (max-width:992px) {
 	        	@include font-size(20px);
 	        	margin-top: 10px;
 	        	margin-bottom: 10px;
-	        	width:200px;
 	        }
 	        @media (max-width: 600px) {
 	        	@include font-size(16px);
-	        	width:140px;
+
 	        	margin-top:0;
 	        }
-			input[type="text"] {
-				width: 50px;
-				border-radius: 20px;
-				border: 1px solid #b0a8a2;
-				text-align: center;
-				position: relative;
-				top:4px;
-				behavior: url(../dev-assets/css/PIE.htc);
-			}
+
 		}
 
 		.select_size {
