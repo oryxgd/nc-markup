@@ -20,14 +20,25 @@ nav.navbar-default {
 	}
 	.navbar-right > li 	{ border-bottom: 9px solid transparent; }
 	.navbar-toggle {
-		width:38px;
-		height: 27px;
-		background: url('../images/mobile/mobile-button.png')no-repeat;
 		border:0;
 		margin-right:0;
-		margin-top:25px;
+		margin-top:20px;
+		.icon-bar {
+			height:3px;
+			margin-bottom: 5px;
+			background-color:#847870;
+		}
+		// width:38px;
+		// height: 27px;
+		// // background: url('../images/mobile/mobile-button.png')no-repeat;
+		// border:0;
+		// margin-right:0;
+		// margin-top:25px;
 		&:focus,&:active,&:hover {
-			background-color:#fff;
+			background-color:#fff;		
+			.icon-bar {
+				background-color:#ff4438;
+			}
 		}
 
 	}
