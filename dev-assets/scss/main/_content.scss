@@ -112,9 +112,10 @@
 	ul {
 		li {
 			padding:0;
-			behavior: url(../dev-assets/css/PIE.htc);
 			box-shadow:#bdbdbd 2px 0px 10px 0px;
+			behavior: url(../dev-assets/css/PIE.htc);
 			display: inline-table;
+			position:relative;
 			background: #fff;
 			@include clearfix;
 			@include bp-medium {

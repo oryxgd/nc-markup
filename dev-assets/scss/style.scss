@@ -80,6 +80,7 @@ html {
 body h1 {
     font-family: Quicksand-Light;
     @include font-size(80px);
+    font-size:80px\9 !important;
     @include bp-small {
         @include font-size(30px);
         line-height: 20px;

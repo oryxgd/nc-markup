@@ -1,5 +1,17 @@
 
 $(document).ready(function() {
+    $(window).load(function() { 
+        $('#status').fadeOut(); 
+        $('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website.
+        $('body').delay(350).css({'overflow':'visible'});
+    })
+
+      if (!Modernizr.svg) {
+        $('img[src$=svg]').each(function(index, item) {
+            imagePath = $(item).attr('src');
+            $(item).attr('src',imagePath.slice(0,-3)+'png');
+        });
+    }
 	$(window).load(function(){
 		$( ".new_product_page" ).each(function() {
 	        var newHeight = 0, $this = $( this );

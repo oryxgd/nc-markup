@@ -7,6 +7,9 @@
 
 .cart {
 	margin:100px auto 20px;
+	behavior: url(../dev-assets/css/PIE.htc);
+	margin:85px auto 0\9;
+	padding-bottom:30px\9;
 	header {
 		padding-bottom: 10px;
 		padding-top: 10px;
@@ -95,6 +98,7 @@
 
 	.contact-info {
 		margin-top:15px;
+		background: #fff;
 		@include bp-small {
 			margin-bottom: 20px;
 		}
@@ -107,6 +111,7 @@
 			padding-top:20px;
 			padding-bottom: 20px;
 			padding-left:20px;
+					padding:10px\9;
 			@include placeholder {
 				color:#847870;
 			}
@@ -128,6 +133,7 @@
 					background: #d8d2cb;
 					margin-left:10px;
 					border:0;
+					width:80%\9;
 					@include bp-small {
 						display: table;
 						width:90%;

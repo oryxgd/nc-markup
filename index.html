@@ -57,7 +57,7 @@
 
                     </button>
                     <a class="navbar-brand page-scroll" href="#page-top">
-                        <img src="dev-assets/images/logo.svg" onerror="this.onerror=null;this.src=dev-assets/images/logo.jpg" alt="top-arrow">
+                        <img src="dev-assets/images/logo.svg" class="img-responsive" alt="top-arrow">
                     </a>
                 </div>
 
@@ -397,24 +397,13 @@
 
     <!--  JavaScript -->
     <script src="scripts/libs/jquery-1.11.2.min.js"></script>
-
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.0.6/modernizr.min.js'></script>
     <script src="scripts/libs/bootstrap.min.js"></script>
     <!--[if IE]>      
         <script src="scripts/libs/ie-bootstrap-carousel.min.js"></script>
     <![endif]-->
     <script src="scripts/jquery.easing.min.js"></script>
-    <script src="scripts/jquery.touchSwipe.min.js"></script>
     <script src="scripts/main.js"></script>
-    <!-- Preloader -->
-
-    <script type="text/javascript">
-        //<![CDATA[
-            $(window).load(function() { 
-                $('#status').fadeOut(); 
-                $('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website.
-                $('body').delay(350).css({'overflow':'visible'});
-            })
-        //]]>
-    </script>
+    <script src="scripts/jquery.touchSwipe.min.js"></script>
 </body>
 </html>

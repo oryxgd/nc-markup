@@ -6,6 +6,7 @@
 	text-align: left;
 	@media (min-width: 1600px) {
 		height: 700px;
+		height:750px\9;
 	}
 	.quantity {
 		@media (max-width: 600px) {
@@ -83,6 +84,7 @@
 			}
 			div {
 				display: inline-table;
+				display:block\9;
 			}
 			.clicker {
 				position:relative;
