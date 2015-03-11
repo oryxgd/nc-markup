@@ -257,7 +257,9 @@
     
     <!--  JavaScript -->
     <script src="scripts/libs/jquery-1.11.2.min.js"></script>
-    <script src='http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.0.6/modernizr.min.js'></script>
+    <!--[if lt IE 9]>
+    <script src="scripts/libs/modernizr.js"></script>
+    <![endif]-->
     <script>
     $(document).on("mobileinit", function(){
         $.mobile.ajaxEnabled=false;
@@ -273,10 +275,21 @@
     <script src="scripts/main.js"></script>
     <!-- Preloader -->
     <script type="text/javascript">
-    $(window).unload(function(){
-     $.mobile.hidePageLoadingMsg();
-    });
+        $(window).unload(function(){
+         $.mobile.hidePageLoadingMsg();
+        });
     </script>
+    <!--[if lt IE 9]>
+    <script type="text/javascript">
+      if (!Modernizr.svg) {
+        $('img[src$=svg]').each(function(index, item) {
+            imagePath = $(item).attr('src');
+            $(item).attr('src',imagePath.slice(0,-3)+'png');
+        });
+    }
+    </script>
+    <![endif]-->
+
 
 </body>
 </html>

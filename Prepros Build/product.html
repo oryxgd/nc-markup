@@ -483,7 +483,9 @@
     </footer>
     <!--  JavaScript -->
     <script src="scripts/libs/jquery-1.11.2.min.js"></script>
-    <script src='http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.0.6/modernizr.min.js'></script>
+    <!--[if lt IE 9]>
+    <script src="scripts/libs/modernizr.js"></script>
+    <![endif]-->
     <script src="scripts/libs/bootstrap.min.js"></script>
     <!--[if IE]>      
         <script src="scripts/libs/ie-bootstrap-carousel.min.js"></script>
@@ -493,24 +495,29 @@
     <script src="scripts/main.js"></script>
     <script src="scripts/isotope.pkgd.min.js"></script>
     <script type="text/javascript">
-
     $(window).load(function(){
-
         var $container = $('.isotope');
         $container.isotope({
             itemSelector: '.item',
-            resizable: false,
+            resizable: true,
             masonry: {
-                columnWidth:1,
-                gutterWidth: 5,
+                columnWidth:405,
+                gutterWidth:0,
                 isFitWidth: true
             }
         });
 
     })
-
-
-
     </script>
+    <!--[if lt IE 9]>
+    <script type="text/javascript">
+      if (!Modernizr.svg) {
+        $('img[src$=svg]').each(function(index, item) {
+            imagePath = $(item).attr('src');
+            $(item).attr('src',imagePath.slice(0,-3)+'png');
+        });
+    }
+    </script>
+    <![endif]-->
 </body>
 </html>

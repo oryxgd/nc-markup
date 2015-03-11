@@ -52,11 +52,14 @@
 			background: #fff;
 			@include clearfix;
 			margin-bottom: 15px;
-			width:23%;
-			@include bp-small {
-				width:100%;
-				margin-bottom: 20px;
-				img {width:100%;}
+			width:380px;
+			// @include bp-small {
+			// 	width:100%;
+			// 	margin-bottom: 20px;
+			// 	img {width:100%;}
+			// }
+			@include bp-medium {
+				max-width:250px;
 			}
 			img {
       		  -webkit-transition: all 0.2s linear;
@@ -71,9 +74,9 @@
 				-ms-transform: scale(1.05,1.05);
 				-ms-filter: "progid:DXImageTransform.Microsoft.Matrix(M11=1.05, M12=0, M21=0, M22=1.05, SizingMethod='auto expand')";
 			}
-			@media (min-width: 601px) and (max-width:992px) {
-				height:170px;
-			}
+			// @media (min-width: 601px) and (max-width:992px) {
+			// 	height:170px;
+			// }
 		}
 		.product_spotlight_image {
 			overflow: hidden;
@@ -88,9 +91,12 @@
 		}
 	}
 	.w2 { 
-		width:48%;
-		@include bp-small {
-			width:100%;
+		width:785px;
+		// @include bp-small {
+		// 	width:100%;
+		// }
+		@include bp-medium {
+			max-width:250px;
 		}
 	}
 	.w2 img { 
