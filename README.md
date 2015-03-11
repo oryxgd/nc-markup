@@ -12,3 +12,5 @@ alex-antonov.com/hugo/aboutnc.html - About NC world page <br>
 alex-antonov.com/hugo/accessory.html - Accessory page <br>
 alex-antonov.com/hugo/cart.html - Cart page <br>
 alex-antonov.com/hugo/Product.html - Product page <br>
+alex-antonov.com/hugo/403.html - 403 error <br>
+alex-antonov.com/hugo/404.html -404 error <br>
