@@ -27,6 +27,7 @@
 
 		h2 {
 			color:#007984;
+			margin-bottom: 0;
 		}
 	}
 	.product-options {
@@ -81,6 +82,7 @@
 				position:relative;
 				z-index: 2;
 				border:1px solid #DBDBDB;
+				@include font-size(16px);
 			}
 			div {
 				display: inline-table;
@@ -138,8 +140,14 @@
 
 		}
 		.price {
-			max-width:280px;
+			max-width:270px;
+			margin-left:15px;
 			clear:both;
+			padding-top:5px;
+			padding-bottom: 5px;
+			p {
+				@include font-size(30px);
+			}
 		}
 
 		h5 {

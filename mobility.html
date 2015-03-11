@@ -703,10 +703,41 @@
     <script src="scripts/jquery.animate_from_to-1.0.min.js"></script>
     <script type="text/javascript">
     $(document).ready(function(){
+
+        var min = 575; // min section height
+        var navbarHeight = 75;
+        var max = 1080 - navbarHeight; // max section height = full HD vertical resolution - navbar height (75px)
+        var resizeSections = (function (){
+            if ($( window ).height() < min) $('.fixed-height-section').height(min);
+            else if ($( window ).height() > max) $('.fixed-height-section').height(max);
+            else $('.fixed-height-section').height($( window ).height() - navbarHeight);
+        });
+
+        // avoids to fire the resize event repeatedly by setting a timer after last resize movement
+        var waitForFinalEvent = (function () {
+            var timers = {};
+            return function (callback, ms, uniqueId) {
+                if (!uniqueId) {
+                    uniqueId = "Don't call this twice without a uniqueId";
+                }
+                if (timers[uniqueId]) {
+                    clearTimeout (timers[uniqueId]);
+                }
+                timers[uniqueId] = setTimeout(callback, ms);
+            };
+        })();
+
+        $(window).resize(function () {
+            waitForFinalEvent(function(){
+                resizeSections(); //applies the section height
+            }, 100, "UniqueString");
+        });
+
+        resizeSections(); //applies the section height
+
         $('.tile').jTile({effect: 'slide', direction: 'right', height: true, position: 'top' });     // applys jTile to all elements with class 'tile'
     });
     </script>
-    
 
 
 

@@ -1,0 +1,26 @@
+//$ error 404 
+
+.section-error{
+	background: #ff4438;
+	height: 100%;
+	.error {
+	  width: 50%;
+	  height: 50%;
+	  margin: auto;
+	  position: absolute;
+	  top: 0; left: 0; bottom: 0; right: 0;
+	  text-align: center;
+	  img {
+	  	margin-bottom: 10px;
+	  }
+	  a {
+	  	color:#fff;
+	  	@include font-size(30px);
+	  	font-family: $lobster-font;
+	  	text-decoration: underline;
+	  	&:hover {
+	  		color:#dddddd;
+	  	}
+	  }
+	}
+}
