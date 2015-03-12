@@ -235,6 +235,24 @@ section.intro-section {
 			height: auto;
 		}
 	}
+	.carousel-control.left {
+		float: left;
+		display: inline-table;
+		width: 60px;
+		top:45%;
+		left:8% !important;
+		filter:none;
+		background: none !important;
+	}	
+	.carousel-control.right {
+		float: left;
+		display: inline-table;
+		width: 60px;
+		top:45%;
+		right:8% !important;
+		filter:none;
+		background: none !important;
+	}
 }
 #carousel-example-generic-main{
 	margin:0 auto;
@@ -297,6 +315,12 @@ section.intro-section {
 		left:20%;
 		text-align: left;
 		text-shadow:none;
+		display: inline-table;
+		a {
+			&:hover {
+				text-decoration: none;
+			}
+		}
 		.tablet-span {
 			font-size: 25px;
 			display: none;

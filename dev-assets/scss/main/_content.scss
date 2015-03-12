@@ -82,10 +82,10 @@
 				}
 				//colors
 			}
-				.hugo  		{ color: #77c9b6;}
-				.olly   	{ color: #f2af72;}
-				.william    { color: #7b8ca8;}
-				.agathe   	{ color: #f69e9f;}
+				.hugo 		a  		{ color: #77c9b6;}
+				.olly 		a   	{ color: #f2af72;}
+				.william 	a    	{ color: #7b8ca8;}
+				.agathe 	a   	{ color: #f69e9f;}
 		}
 	}
 
@@ -152,6 +152,7 @@
 				text-align: left;
 				margin-left:10px;
 				margin-bottom:10px;
+				margin-right:10px;
 				@media (max-width:992px) {
 					padding:5px;
 				}
