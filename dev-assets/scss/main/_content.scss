@@ -82,10 +82,10 @@
 				}
 				//colors
 			}
-				.hugo 		a  		{ color: #77c9b6;}
-				.olly 		a   	{ color: #f2af72;}
-				.william 	a    	{ color: #7b8ca8;}
-				.agathe 	a   	{ color: #f69e9f;}
+				.hugo,.hugo 		a  		{ color: #77c9b6;}
+				.olly,.olly 		a   	{ color: #f2af72;}
+				.william,.william 	a    	{ color: #7b8ca8;}
+				.agathe,.agathe 	a   	{ color: #f69e9f;}
 		}
 	}
 
@@ -110,7 +110,12 @@
 			display: none;
 		}
 	}
+
 	ul {
+		.hover .overlay {
+			height: 100%;
+			width:auto;
+		}
 		li {
 			padding:0;
 			box-shadow:#bdbdbd 2px 0px 10px 0px;
@@ -168,6 +173,91 @@
 					color:#8d827a;
 				}
 			}
+			.overlay {
+			  display: block;
+			  position: absolute;
+			  z-index: 20;
+			  background: rgba(0, 0, 0, 0.8);
+			  overflow: hidden;
+			  transition: all 0.5s;
+
+			}
+			a.close-overlay {
+			  display: block;
+			  position: absolute;
+			  top: 0;
+			  right: 0;
+			  z-index: 100;
+			  width: 45px;
+			  height: 45px;
+			  font-size: 20px;
+			  font-weight: 700;
+			  color: #fff;
+			  line-height: 45px;
+			  text-align: center;
+			  background-color: #000;
+			  cursor: pointer;
+			}
+			a.close-overlay.hidden {
+			  display: none;
+			}
+			.overlay {
+			  top: 0;
+			  bottom: 0;
+			  left: 0;
+			  width: 0;
+			  height: 100%;
+			  a:hover {
+			  	text-decoration: none;
+			  }
+			  h4,p {
+			  	color:#fff;
+			  }
+			  p {
+			  	padding:10px;
+			  	padding-bottom: 0;
+			  }
+			  img {
+			  	margin:0 auto;
+			  	@media (max-width:1200px) {
+			  		display: none;
+			  	}
+			  	&:hover {
+			  		transition: none;
+			  		transform: none;
+			  	}
+			  }
+			}
+			.overlay a.expand {
+			  top: 0;
+			  bottom: 0;
+			  left: 50%;
+			  margin: auto 0 auto -30px;
+			}
+
+
+			a.expand {
+			  display: block;
+			  position: absolute;
+			  z-index: 100;
+			  width: 60px;
+			  height: 60px;
+			  border: solid 5px #fff;
+			  text-align: center;
+			  color: #fff;
+			  line-height: 50px;
+			  font-weight: 700;
+			  font-size: 30px;
+			  -webkit-border-radius: 30px;
+			  -moz-border-radius: 30px;
+			  -ms-border-radius: 30px;
+			  -o-border-radius: 30px;
+			  border-radius: 30px;
+			  &:hover {
+			  	text-decoration: none;
+			  }
+			}
+
 		}
 	}
 	.product_visible {

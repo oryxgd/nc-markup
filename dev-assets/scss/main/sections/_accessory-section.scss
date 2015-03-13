@@ -24,9 +24,28 @@
 			@include clearfix;
 			position: absolute;
 			z-index: 1;
-			left:35%;
+			left:14%;
 			color:#fff;
 			width:20%;
+			h1 {
+				-webkit-box-shadow: 0 10px 10px -6px #fff;
+		   		-moz-box-shadow: 0 10px 10px -6px #fff;
+		        box-shadow: 0 10px 10px -6px #fff;
+		        margin-left:0;
+		        padding-bottom:15px;
+			}
+			p {
+				@include font-size(50px);
+				font-weight: bold;
+				@include bp-small {
+			        @include font-size(20px);
+			        line-height: 20px;
+			    }
+			    @media (min-width: 600px) and (max-width:992px) {
+			        @include font-size(25px);
+			        line-height: 60px;
+			    }
+			}
 		}
 		li {
 			padding:0;
@@ -64,6 +83,14 @@ section.carousel-3 {
 				padding-top:10%;
 			}
 		}
+		.item {
+			transition-property: opacity;
+			opacity: 0;
+			height: 100%;
+		}
+			.active {
+				opacity: 1;
+			}
 		.carousel-indicators {
 			border:1px solid #fff;
 			li.active {

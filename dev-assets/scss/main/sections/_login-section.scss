@@ -47,12 +47,18 @@ section.login-section {
 				border:0;
 			}
 			a {
-				color:#fff;
+				color:#ff4438;
+				background: #fff;
+				width:100%;
+				display: block;
+				padding-top: 2px;
+				padding-bottom: 5px;
 				text-decoration: none;
 				@include font-size(20px);
 				&:hover {
 					text-decoration: none;
-					color:#d8d2cb;
+					color:#fff;
+					background: #d8d2cb;
 				}
 			}
 		}

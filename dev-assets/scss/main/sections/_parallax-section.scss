@@ -1,20 +1,29 @@
 //$Parralax section begin
 
 .parallax-section {
-	  background: url("../images/intro-image.jpg") 50% 0 repeat fixed; 
+	  
+	  background: #fff url("../images/parallax/tower.png")no-repeat fixed;
 	  @media (max-width: 992px) {
 	  	height: auto;
 	  }
 	  width: 100%; 
 	  max-width: 1920px; 
-      position: relative;
-      z-index: 23;
+	  position: relative;
+	  z-index: 23;
 	  margin:75px auto 0;
 	  text-align: left;
 	  padding-bottom: 0;
-		@include bp-small {
-			padding-bottom: 20px;
-		}
+	@include bp-small {
+		padding-bottom: 20px;
+	}
+	.parallax-wrapper {
+		background:url("../images/parallax/shop.png") 50% 100% no-repeat fixed; 
+		height: 100%;
+	}	
+	.bike-wrapper {
+		background:url("../images/parallax/bike.png") 70% 100% no-repeat fixed; 
+		height: 100%;
+	}
 	  .product {
 		width:260px;
 	  	h1 {

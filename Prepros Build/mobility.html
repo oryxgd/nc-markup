@@ -142,6 +142,10 @@
     </nav>
     <section class="parallax-section fixed-height-section" data-type="background" data-speed="10">
     <!--right side icons -->
+      <div class="parallax-wrapper">
+      <div class="bike-wrapper">
+        
+
         <div class="fixed-icons">
             <ul class="scrollToTop">
                 <li><img src="dev-assets/images/top-arrow.svg" onerror="this.onerror=null;this.src=dev-assets/images/top-arrow.png" alt="top-arrow"></li>
@@ -177,6 +181,8 @@
               </div>
           </div>
         </div>
+          </div>
+      </div>
     </section>
 
     <section class="carousel-1">
@@ -191,15 +197,15 @@
           <!-- Wrapper for slides -->
           <div class="carousel-inner" role="listbox">
             <div class="item active">
-              <img src="dev-assets/images/slider-image-1.jpg" alt="slide">
+              <img src="dev-assets/images/bicycle-product.png" alt="slide">
 
             </div>
             <div class="item">
-              <img src="dev-assets/images/slider-image-1.jpg" alt="slide">
+              <img src="dev-assets/images/bicycle-product.png" alt="slide">
 
             </div>
             <div class="item">
-              <img src="dev-assets/images/slider-image-1.jpg" alt="slide">
+              <img src="dev-assets/images/bicycle-product.png" alt="slide">
             </div>
           </div>
 
@@ -484,7 +490,7 @@
                         </div>
                     </div>
 
-                    <div class="col-xs-12 col-lg-4">
+                    <div class="col-xs-6 col-lg-3">
                         <div class="box">
                         <h5>In the Box</h5>
                           <ul class="media-list">
@@ -514,6 +520,40 @@
 
                         </div>
                     </div>
+
+                      <div class="col-xs-6 col-lg-3">
+                        <div class="parts">
+                        <h5>We Recommend</h5>
+                          <ul class="media-list">
+                            <li class="media">
+                              <div class="media-left">
+                                <a href="#">
+                                 <img src="dev-assets/images/products/image-1-1-1.jpg" alt="f">
+                                </a>
+                              </div>
+                              <div class="media-body">
+                                    <p><h7><strong>Tube bag</strong></h7></p>
+                                    <p><h7>Elegant & effortless,let your bicycle carry for you</h7></p>
+                              </div>
+                            </li>
+                            <li class="media">
+                              <div class="media-left">
+                                <a href="#">
+                                 <img src="dev-assets/images/products/image-1-1-1.jpg" alt="f">
+                                </a>
+                              </div>
+                              <div class="media-body">
+                                    <p><h7><strong>The cops</strong></h7></p>
+                                    <p><h7>Protect your outfits with style</h7></p>
+                              </div>
+                            </li>
+
+
+                          </ul>
+
+                        </div>
+                    </div>
+
                 </div> <!-- category  -->
             </div>
 
@@ -690,18 +730,24 @@
     
     <!--  JavaScript -->
     <script src="scripts/libs/jquery-1.11.2.min.js"></script>
-    <!--[if lt IE 9]>
     <script src="scripts/libs/modernizr.js"></script>
-    <![endif]-->
     <script src="scripts/libs/bootstrap.min.js"></script>
     <!--[if IE ]>       
         <script src="scripts/libs/ie-bootstrap-carousel.min.js"></script>
     <![endif]-->
     <script src="scripts/main.js"></script>
+    <script src="scripts/jquery.parallax-1.1.3.js"></script>
     <script src="scripts/jquery.touchSwipe.min.js"></script>
     <script src="scripts/jquery.easing.min.js"></script>
     <script src="scripts/jQuery.jTile.js"></script>
     <script src="scripts/jquery.animate_from_to-1.0.min.js"></script>
+    <script>
+    $(document).ready(function(){
+        $('.parallax-section').parallax("30%", 0.1);
+        $('.parallax-wrapper').parallax("50%", 0.2);
+        $('.bike-wrapper').parallax("100% 100%", 0.6);
+    })
+    </script>
     <!--[if lt IE 9]>
     <script type="text/javascript">
       if (!Modernizr.svg) {
