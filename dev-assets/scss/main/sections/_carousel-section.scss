@@ -14,28 +14,27 @@
 			height: auto;
 		}
 		.item {
-			transition-property: opacity;
-			opacity: 0;
-			height: 100%;
+			// transition-property: opacity;
+			// opacity: 0;
+			// height: 100%;
 			img {
 				width: auto !important;
-				padding-top:50px;
 			}
 		}
-		.active {
-			opacity: 1;
-		}
-		.item:nth-child(1) {
-		  background:#afa198;
-		}
+		// .active {
+		// 	opacity: 1;
+		// }
+		// .item:nth-child(1) {
+		//   background:#afa198;
+		// }
 
-		.item:nth-child(2) {
-		  background: #ff4438;
-		}
+		// .item:nth-child(2) {
+		//   background: #ff4438;
+		// }
 
-		.item:nth-child(3) {
-		  background: orange;
-		}
+		// .item:nth-child(3) {
+		//   background: orange;
+		// }
 	}
 }
 
